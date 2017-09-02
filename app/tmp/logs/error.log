@@ -11858,3 +11858,2211 @@ Request URL: /assets/js/main.js
 Stack Trace:
 #0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:45:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:02 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:08 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:08 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 16:46:17 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:26:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:26:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:26:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:26:55 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:28:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:28:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:28:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:28:34 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:29:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:29:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:29:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:29:43 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:30:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:02 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:15 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:30:35 Error: [MissingViewException] View file "Pages\login_page.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\login_page.ctp',
+)
+Request URL: /pages/login_page
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('login_page')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('login_page', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('login_page')
+#3 [internal function]: PagesController->display('login_page')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:35 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:35 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:58 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:58 Error: [MissingViewException] View file "Pages\img\pic03.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic03.jpg.ctp',
+)
+Request URL: /pages/img/pic03.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic03.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic03.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('img/pic03.jpg')
+#3 [internal function]: PagesController->display('img', 'pic03.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:58 Error: [MissingViewException] View file "Pages\img\pic04.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic04.jpg.ctp',
+)
+Request URL: /pages/img/pic04.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic04.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic04.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('img/pic04.jpg')
+#3 [internal function]: PagesController->display('img', 'pic04.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:30:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:30:58 Error: [MissingViewException] View file "Pages\img\loxley.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\loxley.jpg.ctp',
+)
+Request URL: /pages/img/loxley.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/loxley.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/loxley.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(72): Controller->render('img/loxley.jpg')
+#3 [internal function]: PagesController->display('img', 'loxley.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:31:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:05 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:05 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:09 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:31:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:10 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:31:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:18 Error: [NotFoundException] Invalid user
+Request URL: /users/edit/assets/js/main.js
+Stack Trace:
+#0 [internal function]: UsersController->edit('assets', 'js', 'main.js')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-31 17:31:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:49 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:31:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:31:57 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:32:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:08 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:32:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:12 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:32:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:32:16 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:33:09 Error: Fatal Error (4): syntax error, unexpected '*' in [C:\xampp\htdocs\Loxley\app\Controller\PagesController.php, line 43]
+2017-08-31 17:33:09 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 43, Array)
+#2 C:\xampp\htdocs\Loxley\lib\Cake\Core\App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 43, Array)
+#3 C:\xampp\htdocs\Loxley\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-31 17:33:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:10 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:53 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:33:53 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:33:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:33:58 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:34:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+{main}
+2017-08-31 17:34:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:00 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:34:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:27 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:34:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:28 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:34:28 Error: [MissingViewException] View file "Pages\img\pic03.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic03.jpg.ctp',
+)
+Request URL: /pages/img/pic03.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic03.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic03.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/pic03.jpg')
+#3 [internal function]: PagesController->display('img', 'pic03.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:34:28 Error: [MissingViewException] View file "Pages\img\loxley.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\loxley.jpg.ctp',
+)
+Request URL: /pages/img/loxley.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/loxley.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/loxley.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/loxley.jpg')
+#3 [internal function]: PagesController->display('img', 'loxley.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:34:28 Error: [MissingViewException] View file "Pages\img\pic04.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic04.jpg.ctp',
+)
+Request URL: /pages/img/pic04.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic04.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic04.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/pic04.jpg')
+#3 [internal function]: PagesController->display('img', 'pic04.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-08-31 17:34:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:34:45 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:39:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:39:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:39:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:39:44 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:40:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:40:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:40:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:40:15 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:41:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:41:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:41:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:41:20 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:45:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:18 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:45:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:33 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:45:33 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:45:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:45:49 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:47:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:47:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:47:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:47:51 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:47:52 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:48:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:48:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:48:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:48:41 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:49:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:28 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:49:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:48 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:49:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:49:56 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:50:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:02 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:50:02 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-08-31 17:50:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-31 17:50:35 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:03:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:28 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:29 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:04:57 Error: [NotFoundException] Invalid user
+Request URL: /users/view/assets/js/main.js
+Stack Trace:
+#0 [internal function]: UsersController->view('assets', 'js', 'main.js')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-09-02 19:05:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:05:33 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:05:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:05:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 19:05:33 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:11:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:12 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-09-02 22:12:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:21 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-09-02 22:12:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:21 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /users/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-09-02 22:12:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:28 Error: [MissingActionException] Action BooksController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'BooksController',
+  'action' => 'assets',
+)
+Request URL: /books/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#2 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-09-02 22:12:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:33 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-09-02 22:12:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.theme.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery.ui.core.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-ui-1.11.2/jquery-ui.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-02 22:12:35 Error: [MissingViewException] View file "Pages\assets\js\main.js.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\assets\\js\\main.js.ctp',
+)
+Request URL: /pages/assets/js/main.js
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('assets/js/main....')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('assets/js/main....', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('assets/js/main....')
+#3 [internal function]: PagesController->display('assets', 'js', 'main.js')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-09-02 22:12:35 Error: [MissingViewException] View file "Pages\img\loxley.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\loxley.jpg.ctp',
+)
+Request URL: /pages/img/loxley.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/loxley.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/loxley.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/loxley.jpg')
+#3 [internal function]: PagesController->display('img', 'loxley.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-09-02 22:12:35 Error: [MissingViewException] View file "Pages\img\pic04.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic04.jpg.ctp',
+)
+Request URL: /pages/img/pic04.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic04.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic04.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/pic04.jpg')
+#3 [internal function]: PagesController->display('img', 'pic04.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-09-02 22:12:35 Error: [MissingViewException] View file "Pages\img\pic03.jpg.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\pic03.jpg.ctp',
+)
+Request URL: /pages/img/pic03.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\lib\Cake\View\View.php(470): View->_getViewFileName('img/pic03.jpg')
+#1 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(963): View->render('img/pic03.jpg', NULL)
+#2 C:\xampp\htdocs\Loxley\app\Controller\PagesController.php(78): Controller->render('img/pic03.jpg')
+#3 [internal function]: PagesController->display('img', 'pic03.jpg')
+#4 C:\xampp\htdocs\Loxley\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\Loxley\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-09-02 22:12:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/banner.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\Loxley\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

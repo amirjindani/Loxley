@@ -14,6 +14,12 @@ class UsersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		// Allow users to register and logout.
+		$this->Auth->allow('add', 'logout');
+	}
 
 /**
  * index method
@@ -108,5 +114,18 @@ class UsersController extends AppController {
 			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	public function login() {
+		if ($this->request->is('post')) {
+			if ($this->Auth->login()) {
+				return $this->redirect($this->Auth->redirectUrl());
+			}
+			$this->Flash->error(__('Invalid username or password, try again'));
+		}
+	}
+
+	public function logout() {
+		return $this->redirect($this->Auth->logout());
 	}
 }

@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 /**
  * User Model
  *
@@ -12,6 +13,16 @@ App::uses('AppModel', 'Model');
  */
 class User extends AppModel {
 
+	public function beforeSave($options = array()) {
+		if (isset($this->data[$this->alias]['password'])) {
+			$passwordHasher = new BlowfishPasswordHasher();
+			$this->data[$this->alias]['password'] = $passwordHasher->hash(
+				$this->data[$this->alias]['password']
+			);
+		}
+		return true;
+	}
+
 /**
  * Validation rules
  *
@@ -21,7 +32,7 @@ class User extends AppModel {
 		'username' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
+				'message' => 'A username is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -33,7 +44,7 @@ class User extends AppModel {
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -41,7 +52,7 @@ class User extends AppModel {
 		'password' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
+				'message' => 'A password is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
