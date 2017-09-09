@@ -9,6 +9,7 @@
 		echo $this->Form->input('book_subject_id');
 		echo $this->Form->input('active');
 		echo $this->Form->input('user_id');
+		echo $this->Form->input('author');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

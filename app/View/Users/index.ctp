@@ -1,4 +1,4 @@
-<div class="users index">
+<div class="users index" style="overflow-x:scroll;">
 	<h2><?php echo __('Users'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
@@ -17,11 +17,11 @@
 			<th><?php echo $this->Paginator->sort('professor_tenured'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
 			<th><?php echo $this->Paginator->sort('notes'); ?></th>
-			<th><?php echo $this->Paginator->sort('password_reset_token'); ?></th>
-			<th><?php echo $this->Paginator->sort('password_reset_token_date'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('password'); ?></th>
+			<!--<th><?php //echo $this->Paginator->sort('password_reset_token'); ?></th>
+			<th><?php //echo $this->Paginator->sort('password_reset_token_date'); ?></th>
+			<th><?php //echo $this->Paginator->sort('created'); ?></th>
+			<th><?php //echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php //echo $this->Paginator->sort('password'); ?></th>-->
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -48,11 +48,11 @@
 		<td><?php echo h($user['User']['professor_tenured']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['email']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['notes']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['password_reset_token']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['password_reset_token_date']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>
+		<!--<td><?php //echo h($user['User']['password_reset_token']); ?>&nbsp;</td>
+		<td><?php //echo h($user['User']['password_reset_token_date']); ?>&nbsp;</td>
+		<td><?php //echo h($user['User']['created']); ?>&nbsp;</td>
+		<td><?php //echo h($user['User']['modified']); ?>&nbsp;</td>
+		<td><?php //echo h($user['User']['password']); ?>&nbsp;</td>-->
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $user['User']['id'])); ?>

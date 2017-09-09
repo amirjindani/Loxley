@@ -54,6 +54,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$( function() {
+			$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' }).val()
+		} );
+	</script>
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<!--<link rel="stylesheet" href="css/main.css" />-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -73,16 +81,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<!-- Header -->
 				  <header id="header">
-				  
-					  
-
-				  
-				  <div class="row uniform 50%" style="position: absolute; top:5px; size:45px">
+				  <span><img style="height:100%;" src="img/loxleyCropped.jpg" alt="" /></span>
+				  <div class="row uniform 50%" style="position: absolute; top:5px; size:45px; left:70px;">
 				  
 				  
 				  
 										<div class="8u 12u$(xsmall)"><input type="text" class="fit small" id="search" placeholder="Search Textbook" me="search" /></div>
-												<div class="4u$ 12u$(xsmall)"><input type="submit" value="&#128269" class="fit medium" /></div>
+												<a href="/pages/coming_soon"><div class="4u$ 12u$(xsmall)"><input type="submit" value="&#128269" class="fit medium" /></div></a>
 					</div>
 				  
 				  
@@ -93,13 +98,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					  <nav id="nav">
 						<ul>
 						
-						
 						<li><a href="/pages/home">Home</a></li>
 					  
-						
-						<li><a href="/pages/signup_page" class="button special">Sign Up</a></li>
-						<li><a href="/pages/login_page" class="button special">Log In </a></li>
-						
+						<?php if(empty($authUser)) { ?>
+						<li><a href="/users/add" class="button special">Sign Up</a></li>
+						<li><a href="/users/login" class="button special">Log In </a></li>
+						<?php } else { ?>
+							<li><a href="/users/view/<?php echo $authUser['id']; ?>">Welcome, <?php echo $authUser['username']; ?></a></li>
+							<li><a href="/users/logout" class="button special">Log Out </a></li>
+						<?php } ?>
 						
 						</ul>
 					  </nav>
@@ -111,14 +118,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<!-- Footer -->
-		<footer id="footer">
+		<footer id="footer" style="clear:both;">
 			<ul class="icons">
-					<li class="icons"><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li class="icons"><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li class="icons"><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li class="icons"><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li class="icons"><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li class="icons"><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					<li class="icons"><a href="https://twitter.com/LoxLeyInc" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li class="icons"><a href="/pages/coming_soon" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li class="icons"><a href="mailto:loxley.help@gmail.com?subject=Question&" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 			<li>
@@ -128,7 +132,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<br/>
 			<br/>
 			
-			<li><a href="ReportBug.html" class=" button special">REPORT A BUG</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<li><a href="/pages/coming_soon" class=" button special">REPORT A BUG</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 			
 			</ul>
 

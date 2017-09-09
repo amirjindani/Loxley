@@ -37,6 +37,9 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 	
+	public $components = array('Paginator');
+
+	
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
@@ -83,4 +86,5 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+	
 }

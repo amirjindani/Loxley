@@ -21,6 +21,11 @@ class RolesController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Role->recursive = 0;
 		$this->set('roles', $this->Paginator->paginate());
 	}
@@ -33,6 +38,11 @@ class RolesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Role->exists($id)) {
 			throw new NotFoundException(__('Invalid role'));
 		}
@@ -46,6 +56,11 @@ class RolesController extends AppController {
  * @return void
  */
 	public function add() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if ($this->request->is('post')) {
 			$this->Role->create();
 			if ($this->Role->save($this->request->data)) {
@@ -65,6 +80,11 @@ class RolesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Role->exists($id)) {
 			throw new NotFoundException(__('Invalid role'));
 		}
@@ -89,6 +109,11 @@ class RolesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Role->id = $id;
 		if (!$this->Role->exists()) {
 			throw new NotFoundException(__('Invalid role'));

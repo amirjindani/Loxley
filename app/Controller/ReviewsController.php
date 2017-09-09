@@ -21,6 +21,11 @@ class ReviewsController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Review->recursive = 0;
 		$this->set('reviews', $this->Paginator->paginate());
 	}
@@ -37,7 +42,9 @@ class ReviewsController extends AppController {
 			throw new NotFoundException(__('Invalid review'));
 		}
 		$options = array('conditions' => array('Review.' . $this->Review->primaryKey => $id));
+		$authUser = $this->Auth->user();
 		$this->set('review', $this->Review->find('first', $options));
+		$this->set(compact('authUser'));
 	}
 
 /**
@@ -49,16 +56,17 @@ class ReviewsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Review->create();
 			if ($this->Review->save($this->request->data)) {
-				$this->Flash->success(__('The review has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				$this->Flash->success(__('Your review has been submitted. Thank you for your contribution.'));
+				return $this->redirect(array('controller' => 'pages', 'action' => 'home'));
 			} else {
 				$this->Flash->error(__('The review could not be saved. Please, try again.'));
 			}
 		}
-		$books = $this->Review->Book->find('list');
-		$reviewTypes = $this->Review->ReviewType->find('list');
+		$books = $this->Review->Book->find('list', array('fields' => 'book_name'));
+		$reviewTypes = $this->Review->ReviewType->find('list', array('fields' => 'name'));
 		$users = $this->Review->User->find('list');
-		$this->set(compact('books', 'reviewTypes', 'users'));
+		$authUser = $this->Auth->user();
+		$this->set(compact('books', 'reviewTypes', 'users', 'authUser'));
 	}
 
 /**
@@ -69,13 +77,18 @@ class ReviewsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admins or the user who created the review from this action
+		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Review->exists($id)) {
 			throw new NotFoundException(__('Invalid review'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Review->save($this->request->data)) {
-				$this->Flash->success(__('The review has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				$this->Flash->success(__('Your review has been submitted. Thank you for your contribution.'));
+				return $this->redirect(array('controller' => 'pages', 'action' => 'home'));
 			} else {
 				$this->Flash->error(__('The review could not be saved. Please, try again.'));
 			}
@@ -83,10 +96,11 @@ class ReviewsController extends AppController {
 			$options = array('conditions' => array('Review.' . $this->Review->primaryKey => $id));
 			$this->request->data = $this->Review->find('first', $options);
 		}
-		$books = $this->Review->Book->find('list');
-		$reviewTypes = $this->Review->ReviewType->find('list');
+		$books = $this->Review->Book->find('list', array('fields' => 'book_name'));
+		$reviewTypes = $this->Review->ReviewType->find('list', array('fields' => 'name'));
 		$users = $this->Review->User->find('list');
-		$this->set(compact('books', 'reviewTypes', 'users'));
+		$authUser = $this->Auth->user();
+		$this->set(compact('books', 'reviewTypes', 'users', 'authUser'));
 	}
 
 /**
@@ -97,6 +111,11 @@ class ReviewsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admins or the user who created the review from this action
+		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Review->id = $id;
 		if (!$this->Review->exists()) {
 			throw new NotFoundException(__('Invalid review'));

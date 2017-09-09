@@ -27,6 +27,11 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
 	}
@@ -43,7 +48,16 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$authUser = $this->Auth->user();
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			if($this->Auth->user('id') != $id) {
+				$this->Flash->error('You are not authorized to visit that page');
+				$this->redirect('/');
+			}
+		}
 		$this->set('user', $this->User->find('first', $options));
+		$this->set(compact('authUser'));
 	}
 
 /**
@@ -64,7 +78,8 @@ class UsersController extends AppController {
 		$roles = $this->User->Role->find('list');
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
-		$this->set(compact('roles', 'schools', 'publishers'));
+		$authUser = $this->Auth->user();
+		$this->set(compact('roles', 'schools', 'publishers', 'authUser'));
 	}
 
 /**
@@ -75,6 +90,11 @@ class UsersController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admins or the user who created the review from this action
+		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -92,7 +112,8 @@ class UsersController extends AppController {
 		$roles = $this->User->Role->find('list');
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
-		$this->set(compact('roles', 'schools', 'publishers'));
+		$authUser = $this->Auth->user();
+		$this->set(compact('roles', 'schools', 'publishers', 'authUser'));
 	}
 
 /**
@@ -103,6 +124,11 @@ class UsersController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admins or the user who created the review from this action
+		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->User->id = $id;
 		if (!$this->User->exists()) {
 			throw new NotFoundException(__('Invalid user'));

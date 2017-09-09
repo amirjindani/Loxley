@@ -2208,7 +2208,7 @@
 		textarea:focus {
 	border-color: #800015;
 		}
-
+		
 	.select-wrapper {
 		text-decoration: none;
 		display: block;
@@ -2748,7 +2748,7 @@
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 1px #800015;
-			color: #800015 !important;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"]:active,
@@ -3119,7 +3119,7 @@
 			.wrapper.style2 .button:active {
 	background-color: rgba(0,0,0,1.00) !important;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-	color: #000000 !important;
+	color: #ffffff !important;
 			}
 
 			.wrapper.style2 input[type="submit"]:active,
@@ -4035,4 +4035,33 @@ input[type=text]:focus {
 
 	}
 .smalll {
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+.profile {
+	float:left;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.ui-datepicker th {
+	color: #000 !important;
 }

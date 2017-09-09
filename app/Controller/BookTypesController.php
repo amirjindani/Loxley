@@ -21,6 +21,11 @@ class BookTypesController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->BookType->recursive = 0;
 		$this->set('bookTypes', $this->Paginator->paginate());
 	}
@@ -33,6 +38,11 @@ class BookTypesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->BookType->exists($id)) {
 			throw new NotFoundException(__('Invalid book type'));
 		}
@@ -46,6 +56,11 @@ class BookTypesController extends AppController {
  * @return void
  */
 	public function add() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if ($this->request->is('post')) {
 			$this->BookType->create();
 			if ($this->BookType->save($this->request->data)) {
@@ -65,6 +80,11 @@ class BookTypesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->BookType->exists($id)) {
 			throw new NotFoundException(__('Invalid book type'));
 		}
@@ -89,6 +109,11 @@ class BookTypesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->BookType->id = $id;
 		if (!$this->BookType->exists()) {
 			throw new NotFoundException(__('Invalid book type'));

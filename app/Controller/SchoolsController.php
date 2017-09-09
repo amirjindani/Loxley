@@ -14,6 +14,12 @@ class SchoolsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		// Allow users to register and logout.
+		$this->Auth->allow('find');
+	}
 
 /**
  * index method
@@ -21,6 +27,11 @@ class SchoolsController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->School->recursive = 0;
 		$this->set('schools', $this->Paginator->paginate());
 	}
@@ -33,6 +44,11 @@ class SchoolsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->School->exists($id)) {
 			throw new NotFoundException(__('Invalid school'));
 		}
@@ -46,6 +62,11 @@ class SchoolsController extends AppController {
  * @return void
  */
 	public function add() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if ($this->request->is('post')) {
 			$this->School->create();
 			if ($this->School->save($this->request->data)) {
@@ -65,6 +86,11 @@ class SchoolsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->School->exists($id)) {
 			throw new NotFoundException(__('Invalid school'));
 		}
@@ -89,6 +115,11 @@ class SchoolsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->School->id = $id;
 		if (!$this->School->exists()) {
 			throw new NotFoundException(__('Invalid school'));
@@ -100,5 +131,16 @@ class SchoolsController extends AppController {
 			$this->Flash->error(__('The school could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+	
+/**
+ * find method
+ *
+ * method for searching by book title
+ */
+ 
+	public function find() {
+		//load all books for dropdown menu on search function
+		$this->set('schoolOptions', $this->School->find('list', array('fields' => 'name')));
 	}
 }

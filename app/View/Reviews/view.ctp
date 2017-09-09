@@ -1,69 +1,96 @@
+<style>
+	div.view {
+		float:none;
+		width:100%;
+	}
+</style>
 <div class="reviews view">
-<h2><?php echo __('Review'); ?></h2>
+<h2><?php echo 'Review of '.$review['Book']['book_name'].'<br><h3>by '.$review['User']['username'].'</h3>'; ?></h2>
+	<?php if ($authUser['id'] == $review['User']['id']) { ?>
+	<div class="actions" style="background-color:#a2b3bc;float:right;">
+		<li><?php echo $this->Html->link(__('Edit Review'), array('action' => 'edit', $review['Review']['id'])); ?> </li>
+	</div>
+	<?php } ?>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+		<br>
+		<dt class="profile"><?php echo __('Id'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Book'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($review['Book']['id'], array('controller' => 'books', 'action' => 'view', $review['Book']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($review['Review']['description']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Date'); ?></dt>
+		<?php } ?>
+		<br>
+		<dt class="profile"><?php echo __('Date'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Notes'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Book'); ?></dt>
 		<dd>
-			<?php echo h($review['Review']['notes']); ?>
+			<?php echo $this->Html->link($review['Book']['book_name'], array('controller' => 'books', 'action' => 'view', $review['Book']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Review Type'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Description'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($review['ReviewType']['name'], array('controller' => 'review_types', 'action' => 'view', $review['ReviewType']['id'])); ?>
+			<?php echo h($review['Review']['description']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Rating'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Rating'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['rating']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Active'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Notes'); ?></dt>
+		<dd>
+			<?php echo h($review['Review']['notes']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<dt class="profile"><?php echo __('Review Type'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($review['ReviewType']['name'], array('controller' => 'review_types', 'action' => 'view', $review['ReviewType']['id'])); ?>
+			&nbsp;
+		</dd>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+		<br>
+		<dt class="profile"><?php echo __('Active'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['active']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('User'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('User'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($review['User']['id'], array('controller' => 'users', 'action' => 'view', $review['User']['id'])); ?>
+			<?php echo $this->Html->link($review['User']['username'], array('controller' => 'users', 'action' => 'view', $review['User']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Flag Field'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Flag Field'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['flag_field']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Modified'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['modified']); ?>
 			&nbsp;
 		</dd>
+		<?php } ?>
 	</dl>
 </div>
-<div class="actions">
+<!--<div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Review'), array('action' => 'edit', $review['Review']['id'])); ?> </li>
@@ -79,7 +106,8 @@
 		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div>-->
+<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 <div class="related">
 	<h3><?php echo __('Related Comments'); ?></h3>
 	<?php if (!empty($review['Comment'])): ?>
@@ -127,3 +155,4 @@
 		</ul>
 	</div>
 </div>
+<?php } ?>
