@@ -1,124 +1,160 @@
+<style>
+	div.view {
+		float:none;
+		width:100%;
+	}
+</style>
 <div class="users view">
 <h2><?php echo __('User'); ?></h2>
+	<div class="actions" style="background-color:#a2b3bc;float:right;">
+		<li><?php echo $this->Html->link(__('Edit Your Account'), array('action' => 'edit', $user['User']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Account'), array('action' => 'delete', $user['User']['id']), array('confirm' => __('Are you sure you want to delete your account, %s?', $user['User']['username']))); ?> </li>		
+		<li><?php echo $this->Html->link(__('Create a Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
+	</div>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<!--<dt><?php //echo __('Id'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['id']); ?>
+			<?php //echo h($user['User']['id']); ?>
 			&nbsp;
-		</dd>
-		<dt><?php echo __('Username'); ?></dt>
+		</dd>-->
+		<dt class="profile"><?php echo __('Username'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['username']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Role'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($user['Role']['name'], array('controller' => 'roles', 'action' => 'view', $user['Role']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('First Name'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['first_name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Last Name'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['last_name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('School'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($user['School']['name'], array('controller' => 'schools', 'action' => 'view', $user['School']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Student Major'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['student_major']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Student Graduation Date'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['student_graduation_date']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Publisher'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($user['Publisher']['name'], array('controller' => 'publishers', 'action' => 'view', $user['Publisher']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Publisher Rating'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['publisher_rating']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Professor Rating'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['professor_rating']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Professor Tenured'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['professor_tenured']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Notes'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['notes']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Password Reset Token'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['password_reset_token']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Password Reset Token Date'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['password_reset_token_date']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Password'); ?></dt>
+		<br>
+		<dt class="profile"><?php echo __('Password'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['password']); ?>
 			&nbsp;
 		</dd>
+		<br>
+		<dt class="profile"><?php echo __('Role'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($user['Role']['name'], array('controller' => 'roles', 'action' => 'view', $user['Role']['id'])); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<dt class="profile"><?php echo __('First Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['first_name']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<dt class="profile"><?php echo __('Last Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['last_name']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<dt class="profile"><?php echo __('Email'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['email']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor' || $authUser['Role']['name'] == 'Student') {	?>
+		<dt class="profile"><?php echo __('School'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($user['School']['name'], array('controller' => 'schools', 'action' => 'view', $user['School']['id'])); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Student') {	?>
+		<dt class="profile"><?php echo __('Student Major'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['student_major']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<dt class="profile"><?php echo __('Student Graduation Date'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['student_graduation_date']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Publisher') {	?>
+		<dt class="profile"><?php echo __('Publisher'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($user['Publisher']['name'], array('controller' => 'publishers', 'action' => 'view', $user['Publisher']['id'])); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+		<dt class="profile"><?php echo __('Publisher Rating'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['publisher_rating']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+		<dt class="profile"><?php echo __('Professor Rating'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['professor_rating']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {	?>
+		<dt class="profile"><?php echo __('Professor Tenured'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['professor_tenured']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<dt class="profile"><?php echo __('Notes'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['notes']); ?>
+			&nbsp;
+		</dd>
+		<!--<dt><?php //echo __('Password Reset Token'); ?></dt>
+		<dd>
+			<?php //echo h($user['User']['password_reset_token']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php //echo __('Password Reset Token Date'); ?></dt>
+		<dd>
+			<?php //echo h($user['User']['password_reset_token_date']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php //echo __('Created'); ?></dt>
+		<dd>
+			<?php //echo h($user['User']['created']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php //echo __('Modified'); ?></dt>
+		<dd>
+			<?php //echo h($user['User']['modified']); ?>
+			&nbsp;
+		</dd>-->
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+<!--<div class="actions">
+	<h3><?php // echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit User'), array('action' => 'edit', $user['User']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete User'), array('action' => 'delete', $user['User']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $user['User']['id']))); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Schools'), array('controller' => 'schools', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New School'), array('controller' => 'schools', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Publishers'), array('controller' => 'publishers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Publisher'), array('controller' => 'publishers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Books'), array('controller' => 'books', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Book'), array('controller' => 'books', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Reviews'), array('controller' => 'reviews', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Schools'), array('controller' => 'schools', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New School'), array('controller' => 'schools', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Publishers'), array('controller' => 'publishers', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New Publisher'), array('controller' => 'publishers', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Books'), array('controller' => 'books', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New Book'), array('controller' => 'books', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		<li><?php // echo $this->Html->link(__('List Reviews'), array('controller' => 'reviews', 'action' => 'index')); ?> </li>
+		<li><?php // echo $this->Html->link(__('New Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div>-->
+<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 <div class="related">
 	<h3><?php echo __('Related Books'); ?></h3>
 	<?php if (!empty($user['Book'])): ?>
@@ -205,10 +241,11 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Leave a Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
+<?php } ?>
 <div class="related">
 	<h3><?php echo __('Related Reviews'); ?></h3>
 	<?php if (!empty($user['Review'])): ?>
@@ -254,7 +291,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('Create a Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

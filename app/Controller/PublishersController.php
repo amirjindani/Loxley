@@ -21,6 +21,11 @@ class PublishersController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Publisher->recursive = 0;
 		$this->set('publishers', $this->Paginator->paginate());
 	}
@@ -33,6 +38,11 @@ class PublishersController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Publisher->exists($id)) {
 			throw new NotFoundException(__('Invalid publisher'));
 		}
@@ -46,6 +56,11 @@ class PublishersController extends AppController {
  * @return void
  */
 	public function add() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if ($this->request->is('post')) {
 			$this->Publisher->create();
 			if ($this->Publisher->save($this->request->data)) {
@@ -65,6 +80,11 @@ class PublishersController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Publisher->exists($id)) {
 			throw new NotFoundException(__('Invalid publisher'));
 		}
@@ -89,6 +109,11 @@ class PublishersController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Publisher->id = $id;
 		if (!$this->Publisher->exists()) {
 			throw new NotFoundException(__('Invalid publisher'));

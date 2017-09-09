@@ -21,6 +21,11 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function index() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Comment->recursive = 0;
 		$this->set('comments', $this->Paginator->paginate());
 	}
@@ -33,6 +38,11 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Comment->exists($id)) {
 			throw new NotFoundException(__('Invalid comment'));
 		}
@@ -46,6 +56,11 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function add() {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if ($this->request->is('post')) {
 			$this->Comment->create();
 			if ($this->Comment->save($this->request->data)) {
@@ -57,7 +72,7 @@ class CommentsController extends AppController {
 		}
 		$reviews = $this->Comment->Review->find('list');
 		$users = $this->Comment->User->find('list');
-		$replieds = $this->Comment->Replied->find('list');
+//		$replieds = $this->Comment->Replied->find('list');
 		$this->set(compact('reviews', 'users', 'replieds'));
 	}
 
@@ -69,6 +84,11 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		if (!$this->Comment->exists($id)) {
 			throw new NotFoundException(__('Invalid comment'));
 		}
@@ -85,7 +105,7 @@ class CommentsController extends AppController {
 		}
 		$reviews = $this->Comment->Review->find('list');
 		$users = $this->Comment->User->find('list');
-		$replieds = $this->Comment->Replied->find('list');
+//		$replieds = $this->Comment->Replied->find('list');
 		$this->set(compact('reviews', 'users', 'replieds'));
 	}
 
@@ -97,6 +117,11 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		//prevent any but admin users from accessing administrative pages
+		if($this->Auth->user('Role.name') != 'Administrator') {
+			$this->Flash->error('You are not authorized to visit that page');
+			$this->redirect('/');
+		}
 		$this->Comment->id = $id;
 		if (!$this->Comment->exists()) {
 			throw new NotFoundException(__('Invalid comment'));

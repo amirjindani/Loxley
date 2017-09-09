@@ -9,6 +9,10 @@ App::uses('AppModel', 'Model');
  * @property Review $Review
  */
 class Book extends AppModel {
+	
+	public $actsAs = array(
+		'Search.Searchable'
+	);
 
 /**
  * Validation rules
@@ -110,4 +114,10 @@ class Book extends AppModel {
 		)
 	);
 
+	public $filterArgs = array(
+		'book_name' => array(
+			'type' => 'like'
+		),
+	);
+	
 }

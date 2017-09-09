@@ -79,12 +79,12 @@ class Comment extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Replied' => array(
+/*		'Replied' => array(
 			'className' => 'Replied',
 			'foreignKey' => 'replied_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		)*/
 	);
 }

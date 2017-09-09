@@ -95,14 +95,11 @@ p {
 	color: #fff;
 	background: #003d4c;
 	text-decoration: underline;
-}
+} */
 #content{
-	background: #fff;
-	clear: both;
-	color: #333;
-	padding: 10px 20px 40px 20px;
-	overflow: auto;
+	background: #000;
 }
+/*
 #footer {
 	clear: both;
 	padding: 6px 10px;
@@ -122,15 +119,20 @@ div.view {
 	width:76%;
 	border-left:1px solid #666;
 	padding:10px 2%;
+	background-color:#a2b3bc !important;
+	min-height:100vh;
 }
+
 div.actions {
 	float:left;
 	width:16%;
 	padding:10px 1.5%;
+	background-color:#000;
 }
 div.actions h3 {
 	padding-top:0;
-	color:#777;
+	color:#fff;
+	text-align:center;
 }
 
 
@@ -171,6 +173,11 @@ table tr:nth-child(even) {
 td.actions {
 	text-align: center;
 	white-space: nowrap;
+	background-color:transparent;
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
 }
 table td.actions a {
 	margin: 0 6px;
@@ -245,7 +252,7 @@ dl {
 }
 dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
-	background: #f4f4f4;
+/*	background: #f4f4f4;*/
 }
 
 dt {
@@ -273,9 +280,10 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #e32;
+	color: #000;
 	font-size: 160%;
 	font-weight: bold;
+	font-style:inherit;
 }
 fieldset fieldset {
 	margin-top: 0;
@@ -309,7 +317,7 @@ form .required label:after {
 form div.submit {
 	border: 0;
 	clear: both;
-	margin-top: 10px;
+	margin-top: 10px !important;
 }
 label {
 	display: block;
@@ -322,6 +330,7 @@ input, textarea {
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	padding: 1%;
 	width:98%;
+	background-color: #a2b3bc;
 }
 select {
 	clear: both;
@@ -538,8 +547,8 @@ p.error em {
 	user-select: none;
 }
 .actions ul li a:hover,
-.actions /*a:hover*/ {
-	background: #ededed;
+.actions *a:hover {
+	background: transparent;
 	border-color: #acacac;
 	text-decoration: none;
 }
@@ -565,6 +574,11 @@ p.error em {
 .related {
 	clear: both;
 	display: block;
+	background-color: #a2b3bc;
+	padding-left:30px;
+	padding-top:30px;
+	padding-bottom:1px;
+	padding-right:30px;
 }
 
 /** Debugging **/

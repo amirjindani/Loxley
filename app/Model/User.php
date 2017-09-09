@@ -59,6 +59,13 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		'accepted_terms' => array(
+                'notEmpty' => array(
+                    'rule'     => array('comparison', '!=', 0),
+                    'required' => true,
+                    'message'  => 'You must agree to the Terms and Conditions if you would like to create an account.'
+                )
+		),
 	);
 
 	// The Associations below have been created with all possible keys, those that are not needed can be removed
