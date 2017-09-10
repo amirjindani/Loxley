@@ -60,11 +60,11 @@ class User extends AppModel {
 			),
 		),
 		'accepted_terms' => array(
-                'notEmpty' => array(
-                    'rule'     => array('comparison', '!=', 0),
-                    'required' => true,
-                    'message'  => 'You must agree to the Terms and Conditions if you would like to create an account.'
-                )
+//                'notEmpty' => array(
+//                    'rule'     => array('comparison', '!=', 0),
+//                    'required' => true,
+//                    'message'  => 'You must agree to the Terms and Conditions if you would like to create an account.'
+//                )
 		),
 	);
 
