@@ -217,10 +217,10 @@ table td.actions a {
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-left: 0;
-	background:#000;
+	background:#4cb750;
 }
 .paging > span:hover {
-	background-color: #585858;
+	background-color: #000;
 }
 .paging .prev {
 	border-left: 1px solid #ccc;

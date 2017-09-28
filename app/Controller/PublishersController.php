@@ -27,6 +27,7 @@ class PublishersController extends AppController {
 			$this->redirect('/');
 		}
 		$this->Publisher->recursive = 0;
+		$this->set('publisherOptions', $this->Publisher->find('list', array('fields' => 'name')));
 		$this->set('publishers', $this->Paginator->paginate());
 	}
 
