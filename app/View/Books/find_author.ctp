@@ -1,40 +1,53 @@
 <div id="main" class="wrapper style1">
 	<div class="container">
 		<header class="major">
-		  <h2>Find an Author</h2>
-		  <p>Having trouble finding a textbook? Check the list below.</p>
+		  <h2>Search by Author</h2>
+		  <p>Having trouble finding a textbook? Search by author below.</p>
 		</header>
-
-		<!-- Text-->
-		<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<span class="image">
-			<img src="img/loxley.jpg" alt="" />
-		</span>
-		<br/>
-		<br/>
-		<br/>
-		<br/>-->
 
 		<!-- Form -->
 		<section>
-			<div class="bookSubjects">
-			<?php echo $this->Form->create('Book'); ?>
+			<div class="bookSubjects" style="width:50%; float:left;"> 
+			<!--Begin Search Form-->
+			<?php echo $this->Form->create('Book', array(
+				'url' => array_merge(
+						array(
+							'action' => 'index'
+						),
+						$this->params['pass']
+					)
+				)
+			); ?>
 				<fieldset>
 					<legend><?php echo __('Search by Author'); ?></legend>
 				<?php
-					//currently, this functionality only displays a list of the current book subjects
-					//later, we will want to add in the ability to search books by subject, and should bring this in on this page
-					echo $this->Form->input('name', array('type' => 'select', 'options' => $bookAuthorOptions, 'label' => false));
+					echo $this->Form->input('author', array(
+						'options' => $bookAuthorOptions, 
+						'label' => false, 
+						'empty' => 'Choose an Author or Authors', 
+						'class' => 'multi-select', 
+					));
 				?>
 				</fieldset>
 				<div class="12u$">
 					<ul class="action">
-						<li><a class="button" href="/pages/coming_soon">Search</a></li>
-						<li><input type="reset" value="Reset" /></li>
+						<li><?php echo $this->Form->end(__('Search'), array('div' => false)); ?></li>
+						<li><div><a href="/books/find_author"><input type="reset" value="Reset" /></a></div></li>
 					</ul>
 				</div>
-			<?php //echo $this->Form->end(__('Submit')); ?>
+			<!--End Search Form-->
 			</div>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="image" style="border-radius:100%;">
+				<img src="/img/loxleyCropped.jpg" alt="" />
+			</span>			
 		</section>
 	</div>
 </div>
+
+<!--Select2 Dropdowns function-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.multi-select').select2();
+	});
+</script>

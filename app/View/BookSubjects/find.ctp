@@ -1,40 +1,45 @@
 <div id="main" class="wrapper style1">
 	<div class="container">
 		<header class="major">
-		  <h2>Find a Subject</h2>
+		  <h2>Search by Subject</h2>
 		  <p>Having trouble finding a textbook? Try searching by subject below.</p>
 		</header>
 
-		<!-- Text-->
-		<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<span class="image">
-			<img src="img/loxley.jpg" alt="" />
-		</span>
-		<br/>
-		<br/>
-		<br/>
-		<br/>-->
-
 		<!-- Form -->
 		<section>
-			<div class="bookSubjects">
-			<?php echo $this->Form->create('BookSubject'); ?>
+			<div class="bookSubjects" style="width:50%; float:left;"> 
+			<!--Begin Search Form-->
+			<?php echo $this->Form->create('Book', array(
+				'url' => array_merge(
+						array(
+							'action' => 'index'
+						),
+						$this->params['pass']
+					)
+				)
+			); ?>
 				<fieldset>
 					<legend><?php echo __('Search by Subject'); ?></legend>
 				<?php
-					//currently, this functionality only displays a list of the current book subjects
-					//later, we will want to add in the ability to search books by subject, and should bring this in on this page
-					echo $this->Form->input('name', array('type' => 'select', 'options' => $bookSubjectOptions, 'label' => false));
+					echo $this->Form->input('book_subject_id', array(
+						'options' => $bookSubjectOptions, 
+						'label' => false, 
+						'empty' => 'Choose a Subject or Subjects',
+					));
 				?>
 				</fieldset>
 				<div class="12u$">
 					<ul class="action">
-						<li><a class="button" href="/pages/coming_soon">Search</a></li>
-						<li><input type="reset" value="Reset" /></li>
+						<li><?php echo $this->Form->end(__('Search'), array('div' => false)); ?></li>
+						<li><div><a href="/booksubjects/find"><input type="reset" value="Reset" /></a></div></li>
 					</ul>
 				</div>
-			<?php //echo $this->Form->end(__('Submit')); ?>
+			<!--End Search Form-->
 			</div>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="image" style="border-radius:100%;">
+				<img src="/img/loxleyCropped.jpg" alt="" />
+			</span>			
 		</section>
 	</div>
 </div>

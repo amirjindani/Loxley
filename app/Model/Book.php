@@ -118,6 +118,18 @@ class Book extends AppModel {
 		'book_name' => array(
 			'type' => 'like'
 		),
+		'publisher_id' => array(
+			'type' => 'like'
+		),
+		'book_subject_id' => array(
+			'type' => 'like'
+		),
+		'school_id' => array(
+			'type' => 'like'
+		),
+		'author' => array(
+			'type' => 'like'
+		),		
 	);
 	
 }

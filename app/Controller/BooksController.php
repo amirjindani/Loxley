@@ -18,7 +18,7 @@ class BooksController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this->Auth->allow('find','find_author', 'find_book', 'index');
+		$this->Auth->allow('find_author', 'find_book', 'index','landing_page');
 	}
 
 /**
@@ -27,14 +27,19 @@ class BooksController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Book->recursive = 0;
-		$this->set('books', $this->Paginator->paginate());
-	}
-	
-	public function find() {
 		$this->Prg->commonProcess();
 		$this->Paginator->settings['conditions'] = $this->Book->parseCriteria($this->Prg->parsedParams());
+		$this->Book->recursive = 0;
+		$this->loadModel('BookSubject');
+		$this->loadModel('School');
+		$this->loadModel('Publisher');
+		$this->set('schoolOptions', $this->School->find('list', array('fields' => 'name')));
+		$this->set('bookSubjectOptions', $this->BookSubject->find('list', array('fields' => 'name')));
+		$this->set('publisherOptions', $this->Publisher->find('list', array('fields' => 'name')));
 		$this->set('books', $this->Paginator->paginate());
+		$bookAuthors = $this->Book->find('list', array('fields' => 'author'));
+		$bookAuthorOptions = array_unique($bookAuthors);
+		$this->set(compact('bookAuthorOptions'));
 	}
 
 	public function landing_page() {
@@ -164,6 +169,8 @@ class BooksController extends AppController {
 	
 	public function find_author() {
 		//load all books for dropdown menu on search function
+		$this->Prg->commonProcess();
+		$this->Paginator->settings['conditions'] = $this->Book->parseCriteria($this->Prg->parsedParams());
 		$bookAuthors = $this->Book->find('list', array('fields' => 'author'));
 		$bookAuthorOptions = array_unique($bookAuthors);
 		$this->set(compact('bookAuthorOptions'));

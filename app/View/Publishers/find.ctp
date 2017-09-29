@@ -1,8 +1,8 @@
 <div id="main" class="wrapper style1">
 	<div class="container">
 		<header class="major">
-		  <h2>Search by School</h2>
-		  <p>Having trouble finding a textbook? Search schools that use it below.</p>
+		  <h2>Search by Publisher</h2>
+		  <p>Having trouble finding a textbook? Search by publisher.</p>
 		</header>
 
 		<!-- Form -->
@@ -19,19 +19,19 @@
 				)
 			); ?>
 				<fieldset>
-					<legend><?php echo __('Search by School'); ?></legend>
+					<legend><?php echo __('Search by Publisher'); ?></legend>
 				<?php
-					echo $this->Form->input('school_id', array(
-						'options' => $schoolOptions, 
+					echo $this->Form->input('publisher_id', array(
+						'options' => $publisherOptions, 
 						'label' => false, 
-						'empty' => 'Choose a School or Schools',
+						'empty' => 'Choose a Publisher or Publishers',
 					));
 				?>
 				</fieldset>
 				<div class="12u$">
 					<ul class="action">
 						<li><?php echo $this->Form->end(__('Search'), array('div' => false)); ?></li>
-						<li><div><a href="/schools/find"><input type="reset" value="Reset" /></a></div></li>
+						<li><div><a href="/books/find_book"><input type="reset" value="Reset" /></a></div></li>
 					</ul>
 				</div>
 			<!--End Search Form-->
@@ -43,3 +43,6 @@
 		</section>
 	</div>
 </div>
+			</div>
+		</div>
+		
