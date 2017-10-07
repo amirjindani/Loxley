@@ -3,6 +3,9 @@
 		float:none;
 		width:100%;
 	}
+	.profile {
+		float:none;
+	}
 </style>
 <div class="reviews view">
 <h2><?php echo 'Review of '.$review['Book']['book_name'].'<br><h3>by '.$review['User']['username'].'</h3>'; ?></h2>
@@ -39,12 +42,6 @@
 			&nbsp;
 		</dd>
 		<br>
-		<dt class="profile"><?php echo __('Rating'); ?></dt>
-		<dd>
-			<?php echo h($review['Review']['rating']); ?>
-			&nbsp;
-		</dd>
-		<br>
 		<dt class="profile"><?php echo __('Notes'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['notes']); ?>
@@ -56,7 +53,119 @@
 			<?php echo $this->Html->link($review['ReviewType']['name'], array('controller' => 'review_types', 'action' => 'view', $review['ReviewType']['id'])); ?>
 			&nbsp;
 		</dd>
-		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+		<?php if(!empty($review['Review']['published_content_aligned'])) { ?>
+			<dt class="profile"><?php echo __('Textbook content is aligned with your own curriculum.'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_content_aligned']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php } 
+		if(!empty($review['Review']['published_price'])) { ?>
+			<dt class="profile"><?php echo __('Overall price of textbook'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_price']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['published_content_style'])) { ?>		
+			<dt class="profile"><?php echo __('Overall content style'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_content_style']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['published_included_tools'])) { ?>
+			<dt class="profile"><?php echo __('Digital tools are included (e.g. homework, flashcards, quizzes, software, CD, etc)'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_included_tools']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }	
+		if(!empty($review['Review']['published_practice_questions'])) { ?>
+			<dt class="profile"><?php echo __('Amount and quality of practice questions included in the textbook'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_practice_questions']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['published_up_to_date'])) { ?>
+			<dt class="profile"><?php echo __('Most recent and up to date edition'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_up_to_date']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['published_provided_through_publisher'])) { ?>
+			<dt class="profile"><?php echo __('Curriculum is provided through publisher/department based on textbook'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_provided_through_publisher']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_functionality'])) {	?>
+			<dt class="profile"><?php echo __('Functionality of platform'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_functionality']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_integration_with_lms'])) { ?>
+			<dt class="profile"><?php echo __('Integration with your LMS Sytem (Blackboard, Moodle, D2L, Canvas, etc.)'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_integration_with_lms']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_support'])) { ?>
+			<dt class="profile"><?php echo __('Reliability of technical support to troubleshoot any issue'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_support']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_underline'])) { ?>
+			<dt class="profile"><?php echo __('Ability for students to underline/highlight when they read'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_underline']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_practice'])) { ?>
+			<dt class="profile"><?php echo __('Practice quiz/homework included'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_practice']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_gradebook'])) { ?>		
+			<dt class="profile"><?php echo __('Instructor\'s gradebook management through online platform'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_gradebook']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['ebook_technical_problems'])) { ?>		
+			<dt class="profile"><?php echo __('Minimal technical problems'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['ebook_technical_problems']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php } 
+		if ($authUser['Role']['name'] == 'Administrator') {	?>
 		<br>
 		<dt class="profile"><?php echo __('Active'); ?></dt>
 		<dd>

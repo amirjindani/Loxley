@@ -111,10 +111,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<!--Check to see if user is logged in, if not, show sign up and login buttons,
 						if so, show user name and logout buttons-->
 					<?php if(empty($authUser)) { ?>
+							<li><a href="/pages/about-us">About Us</a></li>
 							<li><a href="/users/add" class="button special">Sign Up</a></li>
 							<li><a href="/users/login" class="button special">Log In </a></li>
 					<?php } else { ?>
 							<li><a href="/users/view/<?php echo $authUser['id']; ?>">Welcome, <?php echo $authUser['username']; ?></a></li>
+							<li><a href="/pages/feedback" class="button special">Submit Feedback </a></li>
 							<li><a href="/users/logout" class="button special">Log Out </a></li>
 					<?php } ?>
 						</ul>
@@ -138,7 +140,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<h5>&copy; Loxley 2017. All Rights Reserved.</h5>
 					</li>
 					<br/>
-					<li><a href="/pages/coming_soon" class=" button special">REPORT A BUG</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<li><a href="/pages/feedback" class=" button special">REPORT A BUG</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 				</ul>
 			</footer>
 		</div>

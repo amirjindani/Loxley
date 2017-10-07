@@ -23,12 +23,14 @@
 			&nbsp;
 		</dd>
 		<br>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 		<dt class="profile"><?php echo __('Password'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['password']); ?>
 			&nbsp;
 		</dd>
 		<br>
+		<?php } ?>
 		<dt class="profile"><?php echo __('Role'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($user['Role']['name'], array('controller' => 'roles', 'action' => 'view', $user['Role']['id'])); ?>
@@ -257,12 +259,27 @@
 		<th><?php echo __('Date'); ?></th>
 		<th><?php echo __('Notes'); ?></th>
 		<th><?php echo __('Review Type Id'); ?></th>
-		<th><?php echo __('Rating'); ?></th>
-		<th><?php echo __('Active'); ?></th>
-		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Flag Field'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+			<th><?php echo __('Textbook content is aligned with your own curriculum.'); ?></th>
+			<th><?php echo __('Overall price of textbook'); ?></th>
+			<th><?php echo __('Overall content style'); ?></th>
+			<th><?php echo __('Digital tools are included (e.g. homework, flashcards, quizzes, software, CD, etc.)'); ?></th>
+			<th><?php echo __('Amount and quality of practice questions included in the textbook'); ?></th>
+			<th><?php echo __('Most recent and up to date edition'); ?></th>
+			<th><?php echo __('Curriculum is provided through publisher/department based on textbook'); ?></th>
+			<th><?php echo __('Functionality of platform'); ?></th>
+			<th><?php echo __('Integration with your LMS Sytem (Blackboard, Moodle, D2L, Canvas, etc.)'); ?></th>
+			<th><?php echo __('Reliability of technical support to troubleshoot any issue'); ?></th>
+			<th><?php echo __('Ability for students to underline/highlight when they read'); ?></th>
+			<th><?php echo __('Practice quiz/homework included'); ?></th>
+			<th><?php echo __('Instructor\'s gradebook management through online platform'); ?></th>
+			<th><?php echo __('Minimal technical problems'); ?></th>
+			<th><?php echo __('Active'); ?></th>
+			<th><?php echo __('User Id'); ?></th>
+			<th><?php echo __('Flag Field'); ?></th>
+			<th><?php echo __('Created'); ?></th>
+			<th><?php echo __('Modified'); ?></th>
+		<?php } ?>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($user['Review'] as $review): ?>
@@ -272,17 +289,32 @@
 			<td><?php echo $review['description']; ?></td>
 			<td><?php echo $review['date']; ?></td>
 			<td><?php echo $review['notes']; ?></td>
-			<td><?php echo $review['review_type_id']; ?></td>
-			<td><?php echo $review['rating']; ?></td>
-			<td><?php echo $review['active']; ?></td>
-			<td><?php echo $review['user_id']; ?></td>
-			<td><?php echo $review['flag_field']; ?></td>
-			<td><?php echo $review['created']; ?></td>
-			<td><?php echo $review['modified']; ?></td>
+			<td><?php echo $review['review_type_id']; ?></td>			
+			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+				<td><?php echo $review['published_content_aligned']; ?></td>
+				<td><?php echo $review['published_price']; ?></td>
+				<td><?php echo $review['published_content_style']; ?></td>
+				<td><?php echo $review['published_included_tools']; ?></td>
+				<td><?php echo $review['published_practice_questions']; ?></td>
+				<td><?php echo $review['published_up_to_date']; ?></td>
+				<td><?php echo $review['published_provided_through_publisher']; ?></td>
+				<td><?php echo $review['ebook_functionality']; ?></td>
+				<td><?php echo $review['ebook_integration_with_lms']; ?></td>
+				<td><?php echo $review['ebook_support']; ?></td>
+				<td><?php echo $review['ebook_underline']; ?></td>
+				<td><?php echo $review['ebook_practice']; ?></td>
+				<td><?php echo $review['ebook_gradebook']; ?></td>
+				<td><?php echo $review['ebook_technical_problems']; ?></td>		
+				<td><?php echo $review['active']; ?></td>
+				<td><?php echo $review['user_id']; ?></td>
+				<td><?php echo $review['flag_field']; ?></td>
+				<td><?php echo $review['created']; ?></td>
+				<td><?php echo $review['modified']; ?></td>
+			<?php } ?>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'reviews', 'action' => 'view', $review['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'reviews', 'action' => 'edit', $review['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'reviews', 'action' => 'delete', $review['id']), array('confirm' => __('Are you sure you want to delete # %s?', $review['id']))); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'reviews', 'action' => 'delete', $review['id']), array('confirm' => __('Are you sure you want to delete this review?', $review['id']))); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

@@ -8,14 +8,14 @@
 	}
 </style>
 <div class="users form">
-<?php echo $this->Form->create('User'); ?>
 	<div class="actions" style="background-color:#a2b3bc;float:right;">
 		<li><?php echo $this->Form->postLink(__('Delete Account'), array('action' => 'delete', $this->Form->value('User.id')), array('confirm' => __('Are you sure you want to delete your account, %s?', $this->Form->value('User.username')))); ?></li>
 	</div>
+	<?php echo $this->Form->create('User'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit User'); ?></legend>
+		<legend><?php echo __('Edit Account'); ?></legend>
 	<?php
-//			echo $this->Form->input('id');
+		echo $this->Form->input('id');
 		echo $this->Form->input('username');
 		echo $this->Form->input('email');
 		echo $this->Form->input('password');
@@ -25,7 +25,9 @@
 			echo $this->Form->input('role_id');
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor' || $authUser['Role']['name'] == 'Student') {		
-			echo $this->Form->input('school_id');
+			echo $this->Form->input('school_id', array(
+				'empty' => 'Select One',
+			));
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Student') {
 			echo $this->Form->input('student_major');
@@ -39,7 +41,7 @@
 			echo $this->Form->input('professor_rating');
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
-			echo $this->Form->input('professor_tenured');
+			echo '<br>'.$this->Form->input('professor_tenured');
 		}
 		echo $this->Form->input('notes');
 //		echo $this->Form->input('password_reset_token');
@@ -66,3 +68,7 @@
 		<li><?php // echo $this->Html->link(__('New Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
 	</ul>
 </div>-->
+<script>
+	$( 'div:has( > label[for="UserUsername"])' ).removeClass('required');
+	$( 'div:has( > label[for="UserPassword"])' ).removeClass('required');
+</script>
