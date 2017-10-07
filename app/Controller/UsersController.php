@@ -76,6 +76,14 @@ class UsersController extends AppController {
 			}
 		}
 		$roles = $this->User->Role->find('list');
+		$index1 = array_search('Administrator',$roles);
+		if($index1 !== FALSE){
+			unset($roles[$index1]);
+		}
+		$index2 = array_search('Student',$roles);
+		if($index2 !== FALSE){
+			unset($roles[$index2]);
+		}
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
 		$authUser = $this->Auth->user();
@@ -91,17 +99,17 @@ class UsersController extends AppController {
  */
 	public function edit($id = null) {
 		//prevent any but admins or the user who created the review from this action
-		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
-			$this->Flash->error('You are not authorized to visit that page');
-			$this->redirect('/');
-		}
+//		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('id') != $id) {
+//			$this->Flash->error('You are not authorized to visit that page');
+//			$this->redirect('/');
+//		}
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
 				$this->Flash->success(__('The user has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'view', $this->params['pass'][0] => $this->request->data['User']['id']));
 			} else {
 				$this->Flash->error(__('The user could not be saved. Please, try again.'));
 			}
@@ -109,6 +117,7 @@ class UsersController extends AppController {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
 		}
+		
 		$roles = $this->User->Role->find('list');
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
@@ -139,7 +148,7 @@ class UsersController extends AppController {
 		} else {
 			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect(array('controller' => 'pages', 'action' => 'home'));
 	}
 
 	public function login() {

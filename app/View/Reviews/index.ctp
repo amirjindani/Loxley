@@ -9,7 +9,20 @@
 			<th><?php echo $this->Paginator->sort('date'); ?></th>
 			<th><?php echo $this->Paginator->sort('notes'); ?></th>
 			<th><?php echo $this->Paginator->sort('review_type_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('rating'); ?></th>
+			<th><?php echo $this->Paginator->sort('published_content_aligned', array('label' => 'Textbook content is aligned with your own curriculum.')); ?></th>
+			<th><?php echo $this->Paginator->sort('published_price', array('label' => 'Overall price of textbook')); ?></th>
+			<th><?php echo $this->Paginator->sort('published_content_style', array('label' => 'Overall content style'));  ?></th>
+			<th><?php echo $this->Paginator->sort('published_included_tools', array('label' => 'Digital tools are included (e.g. homework, flashcards, quizzes, software, CD, etc.)'));  ?></th>
+			<th><?php echo $this->Paginator->sort('published_practice_questions', array('label' => 'Amount and quality of practice questions included in the textbook'));  ?></th>
+			<th><?php echo $this->Paginator->sort('published_up_to_date', array('label' => 'Most recent and up to date edition'));  ?></th>
+			<th><?php echo $this->Paginator->sort('published_provided_through_publisher', array('label' => 'Curriculum is provided through publisher/department based on textbook'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_functionality', array('label' => 'Functionality of platform'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_integration_with_lms', array('label' => 'Integration with your LMS Sytem (Blackboard, Moodle, D2L, Canvas, etc.)'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_support', array('label' => 'Reliability of technical support to troubleshoot any issue'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_underline', array('label' => 'Ability for students to underline/highlight when they read'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_practice', array('label' => 'Practice quiz/homework included'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_gradebook', array('label' => 'Instructor\'s gradebook management through online platform'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_technical_problems', array('min' => '1', 'max' => '5', 'label' => 'Minimal technical problems'));  ?></th>
 			<th><?php echo $this->Paginator->sort('active'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('flag_field'); ?></th>
@@ -31,7 +44,20 @@
 		<td>
 			<?php echo $this->Html->link($review['ReviewType']['name'], array('controller' => 'review_types', 'action' => 'view', $review['ReviewType']['id'])); ?>
 		</td>
-		<td><?php echo h($review['Review']['rating']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_content_aligned']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_price']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_content_style']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_included_tools']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_practice_questions']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_up_to_date']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['published_provided_through_publisher']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_functionality']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_integration_with_lms']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_support']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_underline']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_practice']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_gradebook']); ?>&nbsp;</td>
+		<td><?php echo h($review['Review']['ebook_technical_problems']); ?>&nbsp;</td>
 		<td><?php echo h($review['Review']['active']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($review['User']['id'], array('controller' => 'users', 'action' => 'view', $review['User']['id'])); ?>

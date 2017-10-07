@@ -2,15 +2,30 @@
 <?php echo $this->Form->create('User'); ?>
 	<fieldset>
 		<div style="padding-top:20px;padding-left:20px;"><legend style="float:left;"><?php echo __('Create an Account'); ?></legend>
-		<a href="/pages/coming_soon"><h4 style="font-style:italic;margin-left:40px;display:inline;">Why Create an Account?</h4></a><div>
+		<a href="/pages/about-us"><h4 style="font-style:italic;margin-left:40px;display:inline;">Why Create an Account?</h4></a><div>
 	<?php
 		echo $this->Form->input('username');
-		echo $this->Form->input('email');
+		echo $this->Form->input('email', array(
+			'required' => 'required'
+		));
 		echo $this->Form->input('password');
-		echo $this->Form->input('role_id');
-		echo $this->Form->input('first_name');
-		echo $this->Form->input('last_name');
-		echo $this->Form->input('accepted_terms', array('type' =>'checkbox', 'label'=>__('I agree to the <a href="/pages/tos">Terms and Conditions</a>', true), 'hiddenField' => false, 'value' => '0'));
+		echo $this->Form->input('role_id', array(
+			'options' => $roles,
+			'default' => '4'
+		));
+		echo $this->Form->input('first_name', array(
+			'required' => 'required'
+		));
+		echo $this->Form->input('last_name', array(
+			'required' => 'required'
+		));
+		echo $this->Form->input('accepted_terms', array(
+			'type' =>'checkbox', 
+			'label'=>__('I agree to the <a href="/pages/tos">Terms and Conditions</a>', true),
+			'hiddenField' => false,
+			'value' => '0'
+		));
+		//Following are items to be used/referenced later
 //		echo $this->Form->input('school_id');
 //		echo $this->Form->input('student_major');
 //		echo $this->Form->input('student_graduation_date', array('type' => 'text', 'class' => 'datepicker'));
@@ -27,10 +42,10 @@
 	<?php echo $this->Form->end(__('Submit')); ?>
 	<a href="/users/login"><h4 style="font-style:italic;text-align:center;">Already have an account?</h4></a>
 </div>
-<!--<div class="actions">
+<!--Following are items to be used/referenced later
+<div class="actions">
 	<h3><?php //echo __('Actions'); ?></h3>
 	<ul>
-
 		<li><?php //echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
 		<li><?php //echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li>
 		<li><?php //echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li>
@@ -46,3 +61,19 @@
 		<li><?php //echo $this->Html->link(__('New Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
 	</ul>
 </div>-->
+
+<script>
+	$( document ).ready( function() {
+		$( 'div:has( > label[for="UserEmail"])' ).addClass( 'required' );
+		$( 'div:has( > label[for="UserFirstName"])' ).addClass( 'required' );
+		$( 'div:has( > label[for="UserLastName"])' ).addClass( 'required' );
+		$( 'input[value="Submit"]' ).prop('disabled', true);
+		$( 'input#UserAcceptedTerms' ).change( function() {
+			if( $('input#UserAcceptedTerms').is(':checked') ) {
+				$( 'input[value="Submit"]' ).prop('disabled', false);				
+			} else {
+				$( 'input[value="Submit"]' ).prop('disabled', true);
+			}
+		} )
+	} )
+</script>

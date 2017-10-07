@@ -27,7 +27,7 @@
 			<p>Loxley knows that, as professors, you are constantly striving to enrich your students with a deep and comprehensive understanding of your subject matter and are often confronted with an ambiguous textbook selection process. We rely on professors like you, who seek to find the highest quality information which fit your teaching methods and subject matter. And who else would be able to know better than professors like you? Loxley strives to provide comprehensive ratings and reviews that provide actionable decisions to ultimately help students. We all know students barely touch their textbooks, mainly because of the incongruent teachings and unhelpful rhetoric prominent in big brand textbooks.</p>
 		  <ul class="action">
 		  
-			<li><a href="/pages/coming_soon" class="button">Learn More</a></li>
+			<li><a href="/pages/about-us" class="button">Learn More</a></li>
 			  </br>
 		  </ul>
 	  </div>

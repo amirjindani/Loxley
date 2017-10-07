@@ -69,16 +69,15 @@ class BooksController extends AppController {
  */
 	public function add() {
 		//prevent any but admin users from accessing administrative pages
-		if($this->Auth->user('Role.name') != 'Administrator') {
-			$this->Flash->error('You are not authorized to visit that page');
-			$this->redirect('/');
-		}
-		$this->BookSubject->recursive = 0;
+//		if($this->Auth->user('Role.name') != 'Administrator' || $this->Auth->user('Role.name') != 'Professor') {
+//			$this->Flash->error('You are not authorized to visit that page');
+//			$this->redirect('/');
+//		}
 		if ($this->request->is('post')) {
 			$this->Book->create();
 			if ($this->Book->save($this->request->data)) {
 				$this->Flash->success(__('The book has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('controller' => 'reviews', 'action' => 'add', '?' => array('bookName' => $this->request->data['Book']['book_name'])));
 			} else {
 				$this->Flash->error(__('The book could not be saved. Please, try again.'));
 			}
