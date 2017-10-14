@@ -99,7 +99,7 @@
 		<th><?php echo $this->Paginator->sort('book_name'); ?></th>
 		<th><?php echo $this->Paginator->sort('book_isbn'); ?></th>
 		<th><?php echo $this->Paginator->sort('book_subject_id'); ?></th>
-		<th><?php echo 'Book Rating'; ?></th>
+		<!--<th><?php echo 'Book Rating'; ?></th>-->
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 			<th><?php echo $this->Paginator->sort('active'); ?></th>
 		<?php } ?>
