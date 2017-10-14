@@ -107,7 +107,7 @@
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
-	<tbody>
+	<tbody> 
 	<?php 
 	if(!empty($books)) {
 		foreach ($books as $book): ?>

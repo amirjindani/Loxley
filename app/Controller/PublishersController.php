@@ -127,4 +127,9 @@ class PublishersController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+	
+	public function find() {
+		//load all book subjects for dropdown menu on search function
+		$this->set('publisherOptions', $this->Publisher->find('list', array('fields' => 'name')));
+	}
 }
