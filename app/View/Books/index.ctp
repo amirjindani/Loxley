@@ -118,9 +118,6 @@
 	<?php 
 	if(!empty($books)) {
 		foreach ($books as $book):
-		echo '<pre>';
-		print_r($book);
-		die('stopped intentionally');
 		?>
 		<tr>
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
