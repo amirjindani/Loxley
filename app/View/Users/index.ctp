@@ -31,17 +31,17 @@
 		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($user['Role']['name'], array('controller' => 'roles', 'action' => 'view', $user['Role']['id'])); ?>
+			<?php echo h($user['Role']['name']); ?>
 		</td>
 		<td><?php echo h($user['User']['first_name']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['last_name']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($user['School']['name'], array('controller' => 'schools', 'action' => 'view', $user['School']['id'])); ?>
+			<?php echo ($user['School']['name']); ?>
 		</td>
 		<td><?php echo h($user['User']['student_major']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['student_graduation_date']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($user['Publisher']['name'], array('controller' => 'publishers', 'action' => 'view', $user['Publisher']['id'])); ?>
+			<?php echo h($user['Publisher']['name']); ?>
 		</td>
 		<td><?php echo h($user['User']['publisher_rating']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['professor_rating']); ?>&nbsp;</td>

@@ -119,7 +119,7 @@ div.view {
 	width:76%;
 	border-left:1px solid #666;
 	padding:10px 2%;
-	background-color:#a2b3bc !important;
+	background-color:#424242 !important;
 	min-height:100vh;
 }
 
@@ -140,7 +140,7 @@ div.actions h3 {
 table {
 	border-right:0;
 	clear: both;
-	color: #333;
+	color: #fff !important;
 	margin-bottom: 10px;
 	width: 100%;
 }
@@ -168,7 +168,7 @@ table tr td {
 	border-bottom:1px solid #ddd;
 }
 table tr:nth-child(even) {
-	background: #f9f9f9;
+	/*background: #f9f9f9;*/
 }
 td.actions {
 	text-align: center;
@@ -280,7 +280,7 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #000;
+	color: #4cb750;
 	font-size: 160%;
 	font-weight: bold;
 	font-style:inherit;
@@ -330,7 +330,7 @@ input, textarea {
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	padding: 1%;
 	width:98%;
-	background-color: #a2b3bc;
+	background-color: #424242;
 }
 select {
 	clear: both;
@@ -574,7 +574,7 @@ p.error em {
 .related {
 	clear: both;
 	display: block;
-	background-color: #a2b3bc;
+	background-color: #424242;
 	padding-left:30px;
 	padding-top:30px;
 	padding-bottom:1px;

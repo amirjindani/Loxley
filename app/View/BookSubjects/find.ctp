@@ -25,6 +25,7 @@
 						'options' => $bookSubjectOptions, 
 						'label' => false, 
 						'empty' => 'Choose a Subject or Subjects',
+						'class' => 'select2'
 					));
 				?>
 				</fieldset>

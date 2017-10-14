@@ -44,6 +44,7 @@
 			'div' => false, 
 			'label' => false, 
 			'empty' => 'Subject',
+			'class' => 'select2'
 		)); ?>
 		</span>
 		<span style="width:20%;float:left;margin-right:20px;">
@@ -53,6 +54,7 @@
 			'div' => false,
 			'label' => false, 
 			'empty' => 'School',
+			'class' => 'select2'
 		)); ?>
 		</span>
 		<span style="width:20%;float:left;margin-right:20px;">
@@ -62,6 +64,7 @@
 			'div' => false, 
 			'label' => false, 
 			'empty' => 'Publisher',
+			'class' => 'select2'
 		)); ?>
 		</span>
 		<span style="width:20%;float:left;">
@@ -70,7 +73,8 @@
 				'div' => false,
 				'options' => $bookAuthorOptions,
 				'label' => false,
-				'empty' => 'Author'
+				'empty' => 'Author',
+				'class' => 'select2'
 			)
 		);
 		?>
@@ -95,10 +99,13 @@
 		<th><?php echo $this->Paginator->sort('book_name'); ?></th>
 		<th><?php echo $this->Paginator->sort('book_isbn'); ?></th>
 		<th><?php echo $this->Paginator->sort('book_subject_id'); ?></th>
+		<th><?php echo 'Book Rating'; ?></th>
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 			<th><?php echo $this->Paginator->sort('active'); ?></th>
 		<?php } ?>
-		<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+		<?php } ?>
 		<th><?php echo $this->Paginator->sort('author'); ?></th>
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -110,25 +117,31 @@
 	<tbody>
 	<?php 
 	if(!empty($books)) {
-		foreach ($books as $book): ?>
+		foreach ($books as $book):
+		echo '<pre>';
+		print_r($book);
+		die('stopped intentionally');
+		?>
 		<tr>
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 			<td><?php echo h($book['Book']['id']); ?>&nbsp;</td>
 			<?php } ?>
 			<td>
-				<?php echo $this->Html->link($book['BookType']['name'], array('controller' => 'book_types', 'action' => 'view', $book['BookType']['id'])); ?>
+				<?php echo h($book['BookType']['name']); ?>
 			</td>
 			<td><?php echo h($book['Book']['book_name']); ?>&nbsp;</td>
 			<td><?php echo h($book['Book']['book_isbn']); ?>&nbsp;</td>
 			<td>
-				<?php echo $this->Html->link($book['BookSubject']['name'], array('controller' => 'book_subjects', 'action' => 'view', $book['BookSubject']['id'])); ?>
+				<?php echo h($book['BookSubject']['name']); ?>
 			</td>
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 				<td><?php echo h($book['Book']['active']); ?>&nbsp;</td>
 			<?php } ?>
+			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 			<td>
-				<?php echo $this->Html->link($book['User']['id'], array('controller' => 'users', 'action' => 'view', $book['User']['id'])); ?>
+				<?php echo h($book['User']['id']); ?>
 			</td>
+			<?php } ?>
 			<td><?php echo h($book['Book']['author']); ?>&nbsp;</td>
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 				<td><?php echo h($book['Book']['created']); ?>&nbsp;</td>
@@ -151,7 +164,7 @@
 	<p class="paginator">
 	<?php
 	echo $this->Paginator->counter(array(
-		'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+		'format' => __('Page {:page} of {:pages}. <br>Showing {:current} books out of a total of {:count}, showing books {:start} through {:end}')
 	));
 	?>	</p>
 	<div class="paging">

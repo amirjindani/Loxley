@@ -6,7 +6,7 @@
 </style>
 <div class="reviews form">
 <?php echo $this->Form->create('Review'); ?>
-	<fieldset>
+	<fieldset class="fieldset">
 		<legend><?php echo __('Edit a Textbook Review'); ?></legend>
 	<?php
 		echo $this->Form->input('date', array(
@@ -18,11 +18,9 @@
 			'label' => 'Resource Title'
 		));
 		echo '<h3>What were your thoughts on this resource?</h3>';
-		echo $this->Form->input('description', array(
-			'label' => 'Description of Book'
-		));
 		echo $this->Form->input('notes', array(
-			'type' => 'textarea'
+			'type' => 'textarea',
+			'label' => 'Comments'
 		));
 		if(!empty($this->request->data['Review']['published_content_aligned'])) {
 			echo $this->Form->input('published_content_aligned', array(
@@ -36,7 +34,7 @@
 			echo $this->Form->input('published_price', array(
 				'min' => '1', 
 				'max' => '5', 
-				'label' => 'Overall price of textbook', 
+				'label' => 'Satisfaction with the overall price of the textbook', 
 				'class'=> 'published'
 			));
 		}
@@ -44,7 +42,7 @@
 			echo $this->Form->input('published_content_style', array(
 				'min' => '1', 
 				'max' => '5', 
-				'label' => 'Overall content style', 
+				'label' => 'Overall content style (how engaging and friendly the text is)', 
 				'class'=> 'published'
 			));
 		}
@@ -68,7 +66,7 @@
 			echo $this->Form->input('published_up_to_date', array(
 				'min' => '1', 
 				'max' => '5', 
-				'label' => 'Most recent and up to date edition', 
+				'label' => 'Most recent and up to date edition of Textbook', 
 				'class'=> 'published'
 			));
 		}
@@ -84,7 +82,7 @@
 			echo $this->Form->input('ebook_functionality', array(
 				'min' => '1', 
 				'max' => '5', 
-				'label' => 'Functionality of platform', 
+				'label' => 'Overall functionality of platform', 
 				'class'=> 'ebook'
 			));
 		}
@@ -172,4 +170,9 @@
 	$( 'div:has( > label[for="ReviewUserId"])' ).css('display','none');
 	$( 'div:has( > label[for="ReviewFlagField"])' ).css('display','none');
 	$( 'div:has( > label[for="ReviewReviewTypeId"])' ).css('display','none');
+</script>
+<script>
+	$( function() {
+		$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' }).val()
+	} );
 </script>
