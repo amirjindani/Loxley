@@ -1,15 +1,21 @@
 <div class="books form">
 <?php echo $this->Form->create('Book'); ?>
-	<fieldset>
+	<fieldset class="fieldset">
 		<legend><?php echo __('Edit Book'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('book_type_id');
+		echo $this->Form->input('book_type_id', array(
+			'class' => 'select2'
+		));
 		echo $this->Form->input('book_name');
 		echo $this->Form->input('book_isbn');
-		echo $this->Form->input('book_subject_id');
+		echo $this->Form->input('book_subject_id', array(
+			'class' => 'select2'
+		));
 		echo $this->Form->input('active');
-		echo $this->Form->input('user_id');
+		echo $this->Form->input('user_id', array(
+			'class' => 'select2'
+		));
 		echo $this->Form->input('author');
 	?>
 	</fieldset>

@@ -25,6 +25,7 @@
 						'options' => $publisherOptions, 
 						'label' => false, 
 						'empty' => 'Choose a Publisher or Publishers',
+						'class' => 'select2'
 					));
 				?>
 				</fieldset>

@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		font-weight:bold !important;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -47,7 +48,39 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	
+	.parallax {
+		/* The image used */
+		background-image: url("/img/bookcase.jpg");
 
+		/* Set a specific height */
+		height: 500px;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.fieldset {
+		width:70vw;
+	}
+	
+	.rating {
+	  unicode-bidi: bidi-override;
+	  direction: rtl;
+	}
+	.rating > span {
+	  display: inline-block;
+	  position: relative;
+	  width: 1.1em;
+	}
+	.rating > span:hover:before,
+	.rating > span:hover ~ span:before {
+/*	   content: "\2605";
+	   position: absolute;*/
+	}
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1551,7 +1584,7 @@
 /* Basic */
 
 	html, body {
-	background-color: #EFF2FC;
+	background-color: #ffffff;
 	}
 
 	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1566,7 +1599,7 @@
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(255, 255, 255, 1);
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
@@ -1578,13 +1611,12 @@
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #800015;
+		color: #4cb750;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #800015 !important;
+			color: #4cb750 !important;
 			border-bottom-color: transparent;
 		}
 
@@ -1603,7 +1635,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #4cb750 !important;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2102,7 +2134,7 @@
 
 	section.special, article.special {
 	text-align: center;
-	background-color: #EFF2FC;
+	background-color: #ffffff;
 	}
 
 	header p {
@@ -2181,8 +2213,8 @@
 	transition: border-color 0.2s ease-in-out;
 	background: transparent;
 	border-radius: 4px;
-	border: 4px solid rgba(255, 255, 255, 0.3);
-	color: inherit;
+	border: 4px solid rgba(255, 255, 255, 0.7);
+	color: #fff;
 	display: block;
 	outline: 0;
 	padding: 0 1em;
@@ -2206,7 +2238,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-	border-color: #800015;
+	border-color: #4cb750;
 		}
 		
 	.select-wrapper {
@@ -2258,6 +2290,7 @@
 	select option {
 		background-color: #1c1d26;
 		color: #ffffff;
+		font-weight:bold;
 	}
 
 	select:focus::-ms-value {
@@ -2281,7 +2314,7 @@
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: rgba(255, 255, 255, 0.75);
+			color: rgba(255, 255, 255, 1);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2326,7 +2359,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #800015;
+			border-color: #4cb750;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2338,27 +2371,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(255, 255, 255, 0.9) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(255, 255, 255, 0.9) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(255, 255, 255, 0.9) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(255, 255, 255, 0.9) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(255, 255, 255, 0.9) !important;
 		opacity: 1.0;
 	}
 
@@ -2669,7 +2702,7 @@
 		}
 
 		table th {
-			color: #ffffff;
+			color: #4cb750;
 			font-size: 0.9em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2747,8 +2780,9 @@
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #800015;
+			box-shadow: inset 0 0 0 1px #4cb750;
 			color: #ffffff !important;
+			background-color:transparent !important;
 		}
 
 		input[type="submit"]:active,
@@ -3034,17 +3068,17 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #800015;
+			border-color: #4cb750;
 		}
 
 		.spotlight.style2 .content {
 	border-color: #ffffff;
-	background-color: #a2b3bc;
+	background-color: #424242;
 		}
 
 		.spotlight.style3 .content {
 	border-color: #ffffff;
-	background-color: #a2b3bc;
+	background-color: #424242;
 		}
 
 		.spotlight.inactive .content {
@@ -3095,11 +3129,11 @@
 
 	.wrapper {
 	padding: 6em 0 4em 0;
-	background-color: #a2b3bc;
+	background-color: #424242;
 	}
 
 		.wrapper.style2 {
-	background-color: #a2b3bc;
+	background-color: #424242;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3238,7 +3272,7 @@
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #800015;
+				color: #4cb750;
 			}
 
 		.dropotron.level-0 {
@@ -3310,7 +3344,7 @@
 
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
-						color: inherit;
+						color: #fff;
 						display: inline-block;
 						height: inherit;
 						line-height: inherit;
@@ -3329,7 +3363,7 @@
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #800015;
+						color: #4cb750;
 					}
 
 					#header nav ul li > ul {
@@ -3350,8 +3384,9 @@
 
 	#banner {
 	background-attachment: fixed;
-	background-color: #a2b3bc;
-	background-image: url(images/banner.jpg);
+	background-color: rgba(255, 255, 255, 0.81) !important;
+	background-image: url(/img/bookcase.jpg);
+	background-blend-mode: color;
 	background-position: center center;
 	background-size: cover;
 	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3393,7 +3428,7 @@
 	text-align: right;
 	vertical-align: middle;
 	z-index: 1;
-	background-color: #a2b3bc;
+	background-color: #424242;
 		}
 
 			#banner .content header {
@@ -3435,7 +3470,7 @@
 /* Footer */
 
 	#footer {
-	background-color: #EFF2FC;
+	background-color: #ffffff;
 	padding: 6em 0;
 	text-align: center;
 	}
@@ -3468,7 +3503,6 @@
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px rgba(255, 255, 255, 0.3);
 				display: inline-block;
 				list-style: none;
 				margin-left: 1.5em;
@@ -3814,7 +3848,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #800015;
+						background: #4cb750;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;

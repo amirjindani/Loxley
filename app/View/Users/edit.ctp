@@ -8,11 +8,11 @@
 	}
 </style>
 <div class="users form">
-	<div class="actions" style="background-color:#a2b3bc;float:right;">
+	<div class="actions" style="background-color:#424242;float:right;">
 		<li><?php echo $this->Form->postLink(__('Delete Account'), array('action' => 'delete', $this->Form->value('User.id')), array('confirm' => __('Are you sure you want to delete your account, %s?', $this->Form->value('User.username')))); ?></li>
 	</div>
 	<?php echo $this->Form->create('User'); ?>
-	<fieldset>
+	<fieldset class="fieldset">
 		<legend><?php echo __('Edit Account'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
@@ -27,6 +27,7 @@
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor' || $authUser['Role']['name'] == 'Student') {		
 			echo $this->Form->input('school_id', array(
 				'empty' => 'Select One',
+				'class' => 'select2'
 			));
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Student') {

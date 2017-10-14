@@ -1,6 +1,6 @@
 <div class="users form" style="float:none;width:100%;">
 <?php echo $this->Form->create('User'); ?>
-	<fieldset>
+	<fieldset class="fieldset">
 		<div style="padding-top:20px;padding-left:20px;"><legend style="float:left;"><?php echo __('Create an Account'); ?></legend>
 		<a href="/pages/about-us"><h4 style="font-style:italic;margin-left:40px;display:inline;">Why Create an Account?</h4></a><div>
 	<?php
@@ -11,7 +11,8 @@
 		echo $this->Form->input('password');
 		echo $this->Form->input('role_id', array(
 			'options' => $roles,
-			'default' => '4'
+			'default' => '4',
+			'class' => 'select2'
 		));
 		echo $this->Form->input('first_name', array(
 			'required' => 'required'

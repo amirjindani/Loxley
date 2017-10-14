@@ -10,11 +10,11 @@
 <div class="reviews view">
 <h2><?php echo 'Review of '.$review['Book']['book_name'].'<br><h3>by '.$review['User']['username'].'</h3>'; ?></h2>
 	<?php if ($authUser['id'] == $review['User']['id']) { ?>
-	<div class="actions" style="background-color:#a2b3bc;float:right;">
+	<div class="actions" style="background-color:#424242;float:right;">
 		<li><?php echo $this->Html->link(__('Edit Review'), array('action' => 'edit', $review['Review']['id'])); ?> </li>
 	</div>
 	<?php } ?>
-	<dl>
+	<dl style="width:100%;">
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 		<br>
 		<dt class="profile"><?php echo __('Id'); ?></dt>
@@ -36,13 +36,7 @@
 			&nbsp;
 		</dd>
 		<br>
-		<dt class="profile"><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($review['Review']['description']); ?>
-			&nbsp;
-		</dd>
-		<br>
-		<dt class="profile"><?php echo __('Notes'); ?></dt>
+		<dt class="profile"><?php echo __('Comments'); ?></dt>
 		<dd>
 			<?php echo h($review['Review']['notes']); ?>
 			&nbsp;
@@ -50,10 +44,20 @@
 		<br>
 		<dt class="profile"><?php echo __('Review Type'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($review['ReviewType']['name'], array('controller' => 'review_types', 'action' => 'view', $review['ReviewType']['id'])); ?>
+			<?php echo h($review['ReviewType']['name']); ?>
 			&nbsp;
 		</dd>
-		<?php if(!empty($review['Review']['published_content_aligned'])) { ?>
+		<br>
+		<?php
+		if(!empty($review['Review']['published_average_rating'])) { ?>		
+			<dt id="published-average" class="profile"><?php echo __('Overall Score'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['published_average_rating']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
+		if(!empty($review['Review']['published_content_aligned'])) { ?>
 			<dt class="profile"><?php echo __('Textbook content is aligned with your own curriculum.'); ?></dt>
 			<dd>
 				<?php echo h($review['Review']['published_content_aligned']); ?>
@@ -62,7 +66,7 @@
 			<br>
 		<?php } 
 		if(!empty($review['Review']['published_price'])) { ?>
-			<dt class="profile"><?php echo __('Overall price of textbook'); ?></dt>
+			<dt class="profile"><?php echo __('Satisfaction with the overall price of the textbook'); ?></dt>
 			<dd>
 				<?php echo h($review['Review']['published_price']); ?>
 				&nbsp;
@@ -70,7 +74,7 @@
 			<br>
 		<?php }
 		if(!empty($review['Review']['published_content_style'])) { ?>		
-			<dt class="profile"><?php echo __('Overall content style'); ?></dt>
+			<dt class="profile"><?php echo __('Overall content style (how engaging and friendly the text is)'); ?></dt>
 			<dd>
 				<?php echo h($review['Review']['published_content_style']); ?>
 				&nbsp;
@@ -109,8 +113,16 @@
 			</dd>
 			<br>
 		<?php }
+		if(!empty($review['Review']['average_ebook_rating'])) { ?>		
+			<dt class="profile"><?php echo __('Overall Score'); ?></dt>
+			<dd>
+				<?php echo h($review['Review']['average_ebook_rating']); ?>
+				&nbsp;
+			</dd>
+			<br>
+		<?php }
 		if(!empty($review['Review']['ebook_functionality'])) {	?>
-			<dt class="profile"><?php echo __('Functionality of platform'); ?></dt>
+			<dt class="profile"><?php echo __('Overall functionality of platform'); ?></dt>
 			<dd>
 				<?php echo h($review['Review']['ebook_functionality']); ?>
 				&nbsp;
@@ -175,7 +187,7 @@
 		<br>
 		<dt class="profile"><?php echo __('User'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($review['User']['username'], array('controller' => 'users', 'action' => 'view', $review['User']['id'])); ?>
+			<?php echo h($review['User']['username']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -265,3 +277,14 @@
 	</div>
 </div>
 <?php } ?>
+
+<script>
+//TO DO: use html to insert stars for number
+$( document ).ready( function() {
+	var n = $( 'dt#published-average + dd' ).val();
+	$( 'dt#published-average + dd' ).css( 'display','none' );
+	for(var i = 0; i < n; i++){
+		$( 'dt#published-average' ).append( '<span>&#9733;</span>' );
+	}
+} );
+</script>

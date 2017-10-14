@@ -25,6 +25,7 @@
 						'options' => $schoolOptions, 
 						'label' => false, 
 						'empty' => 'Choose a School or Schools',
+						'class' => 'select2'
 					));
 				?>
 				</fieldset>

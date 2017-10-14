@@ -24,8 +24,8 @@
 					echo $this->Form->input('author', array(
 						'options' => $bookAuthorOptions, 
 						'label' => false, 
-						'empty' => 'Choose an Author or Authors', 
-						'class' => 'multi-select', 
+						'empty' => 'Choose an Author or Authors',
+						'class' => 'select2'
 					));
 				?>
 				</fieldset>

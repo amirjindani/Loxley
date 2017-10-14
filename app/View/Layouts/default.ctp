@@ -26,6 +26,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
+	
 	<?php
 		echo $this->Html->meta('icon');
 		
@@ -62,11 +66,26 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-		$( function() {
-			$( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' }).val()
-		} );
-	</script>
+	<style>
+	/* select2 styling */
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		color:#fff;
+		line-height:52px;
+	}
+	.select2-container--default .select2-selection--single {
+		background-color:#424242;
+		border: 4px solid rgba(255, 255, 255, 0.7);
+		height:52px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow {
+		height: 52px !important;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		width: 52px !important;
+	}	
+	
+	</style>
 </head>
 <body>
 	<div id="container">
@@ -108,10 +127,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<ul>	
 						<li><a href="/">Home</a></li>
 						<li><a href="/books">Browse Books</a></li>
+						<li><a href="/pages/about-us">About Us</a></li>
 						<!--Check to see if user is logged in, if not, show sign up and login buttons,
 						if so, show user name and logout buttons-->
 					<?php if(empty($authUser)) { ?>
-							<li><a href="/pages/about-us">About Us</a></li>
 							<li><a href="/users/add" class="button special">Sign Up</a></li>
 							<li><a href="/users/login" class="button special">Log In </a></li>
 					<?php } else { ?>
@@ -129,7 +148,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<?php echo $this->fetch('content'); ?>
 			</div>
 			<!-- Footer -->
-			<footer id="footer" style="clear:both;">
+			<footer id="footer" style="clear:both;background-color:#000;">
 				<ul class="icons">
 					<li class="icons"><a href="https://twitter.com/LoxLeyInc" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 					<li class="icons"><a href="/pages/coming_soon" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
@@ -145,5 +164,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</footer>
 		</div>
 	</div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>	
+	<script>
+	$( document ).ready( function() {
+		$( ".select2" ).select2();
+	} );
+	
+	</script>
 </body>
 </html>
