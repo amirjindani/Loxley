@@ -69,10 +69,10 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
+				$this->Flash->success(__('You have successfully created an account. Please, log in to continue.'));
 				return $this->redirect(array('controller'=>'pages','action' => 'home'));
 			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				$this->Flash->error(__('Your account could not be created. Please, try again.'));
 			}
 		}
 		$roles = $this->User->Role->find('list');
@@ -108,10 +108,10 @@ class UsersController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
+				$this->Flash->success(__('Your account has been successfully updated.'));
 				return $this->redirect(array('action' => 'view', $this->params['pass'][0] => $this->request->data['User']['id']));
 			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				$this->Flash->error(__('Your account could not be updated. Please, try again.'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -144,9 +144,9 @@ class UsersController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Flash->success(__('The user has been deleted.'));
+			$this->Flash->success(__('User account deleted.'));
 		} else {
-			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+			$this->Flash->error(__('User could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('controller' => 'pages', 'action' => 'home'));
 	}

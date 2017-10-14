@@ -72,10 +72,10 @@ class BookSubjectsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->BookSubject->create();
 			if ($this->BookSubject->save($this->request->data)) {
-				$this->Flash->success(__('The book subject has been saved.'));
+				$this->Flash->success(__('Book subject has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The book subject could not be saved. Please, try again.'));
+				$this->Flash->error(__('Book subject could not be saved. Please, try again.'));
 			}
 		}
 	}
@@ -99,10 +99,10 @@ class BookSubjectsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->BookSubject->save($this->request->data)) {
-				$this->Flash->success(__('The book subject has been saved.'));
+				$this->Flash->success(__('Book subject has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Flash->error(__('The book subject could not be saved. Please, try again.'));
+				$this->Flash->error(__('Book subject could not be saved. Please, try again.'));
 			}
 		} else {
 			$options = array('conditions' => array('BookSubject.' . $this->BookSubject->primaryKey => $id));
@@ -130,9 +130,9 @@ class BookSubjectsController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->BookSubject->delete()) {
-			$this->Flash->success(__('The book subject has been deleted.'));
+			$this->Flash->success(__('Book subject has been deleted.'));
 		} else {
-			$this->Flash->error(__('The book subject could not be deleted. Please, try again.'));
+			$this->Flash->error(__('Book subject could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

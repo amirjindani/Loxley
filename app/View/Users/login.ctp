@@ -1,22 +1,24 @@
 <style>
-	div.form {
+	div.users {
 		float:none;
 		width:100%;
+		border:0;
+	}
+	input[value="Login"]:hover {
+		background-color:#fff !important;
 	}
 </style>
 <!-- Main -->
 <section id="five" class="wrapper style2 special fade">
 	<div class="container">
 		<header>
-			<div class="8u 12u$(xsmall)">
-				<h2 style="float:left;">Log-in &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h2>
+			<h2 style="float:left;">Log-in &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h2>
 		</header>
-	</div>
 	<div class="users form">
 		<?php echo $this->Flash->render('auth'); ?>
 		<?php echo $this->Form->create('User'); ?>
 		<fieldset>
-			<legend style="color:black;margin-left:10px;">
+			<legend style="color:#4cb750;margin-left:10px;">
 				<?php echo __('Please enter your username and password'); ?>
 			</legend>
 			<div class="row uniform 50%">
@@ -42,7 +44,7 @@
 			</div>
 		</div>
 		<div class="8u 12u$(xsmall)">
-			<h3>Forgot Password? Contact a system administrator.</h3> 
+		<h3>Forgot Password?<a href="mailto:loxley.help@gmail.com?subject=Question&" style="font-weight:bold;"> Contact us</a> at loxley.help@gmail.com.</h3>
 		</div>
 		<br/>
 	</div>

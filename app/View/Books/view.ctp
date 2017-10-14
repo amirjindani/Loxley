@@ -2,6 +2,7 @@
 	div.view {
 		float:none;
 		width:100%;
+		min-height:initial;
 	}
 </style>
 <div class="books view">
@@ -17,7 +18,7 @@
 		<?php } ?>
 		<dt class="profile"><?php echo __('Book Type'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($book['BookType']['name'], array('controller' => 'book_types', 'action' => 'view', $book['BookType']['id'])); ?>
+			<?php echo h($book['BookType']['name']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -35,7 +36,7 @@
 		<br>
 		<dt class="profile"><?php echo __('Book Subject'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($book['BookSubject']['name'], array('controller' => 'book_subjects', 'action' => 'view', $book['BookSubject']['id'])); ?>
+			<?php echo h($book['BookSubject']['name']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -48,7 +49,7 @@
 		<br>
 		<dt class="profile"><?php echo __('User'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($book['User']['id'], array('controller' => 'users', 'action' => 'view', $book['User']['id'])); ?>
+			<?php echo h($book['User']['id']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -96,13 +97,10 @@
 	<?php if (!empty($book['Review'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Book Id'); ?></th>
-		<th><?php echo __('Description'); ?></th>
 		<th><?php echo __('Date'); ?></th>
 		<th><?php echo __('Notes'); ?></th>
-		<th><?php echo __('Review Type Id'); ?></th>
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+			<th><?php echo __('Review Type Id'); ?></th>
 			<th><?php echo __('Textbook content is aligned with your own curriculum.'); ?></th>
 			<th><?php echo __('Overall price of textbook'); ?></th>
 			<th><?php echo __('Overall content style'); ?></th>
@@ -127,13 +125,10 @@
 	</tr>
 	<?php foreach ($book['Review'] as $review): ?>
 		<tr>
-			<td><?php echo $review['id']; ?></td>
-			<td><?php echo $review['book_id']; ?></td>
-			<td><?php echo $review['description']; ?></td>
 			<td><?php echo $review['date']; ?></td>
 			<td><?php echo $review['notes']; ?></td>
-			<td><?php echo $review['review_type_id']; ?></td>
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+				<td><?php echo $review['review_type_id']; ?></td>
 				<td><?php echo $review['published_content_aligned']; ?></td>
 				<td><?php echo $review['published_price']; ?></td>
 				<td><?php echo $review['published_content_style']; ?></td>

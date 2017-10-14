@@ -6,7 +6,7 @@
 </style>
 <div class="users view">
 <h2><?php echo __('User'); ?></h2>
-	<div class="actions" style="background-color:#a2b3bc;float:right;">
+	<div class="actions" style="background-color:#424242;float:right;">
 		<li><?php echo $this->Html->link(__('Edit Your Account'), array('action' => 'edit', $user['User']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Account'), array('action' => 'delete', $user['User']['id']), array('confirm' => __('Are you sure you want to delete your account, %s?', $user['User']['username']))); ?> </li>		
 		<li><?php echo $this->Html->link(__('Create a Review'), array('controller' => 'reviews', 'action' => 'add')); ?> </li>
@@ -33,7 +33,7 @@
 		<?php } ?>
 		<dt class="profile"><?php echo __('Role'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($user['Role']['name'], array('controller' => 'roles', 'action' => 'view', $user['Role']['id'])); ?>
+			<?php echo h($user['Role']['name']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -58,7 +58,7 @@
 		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor' || $authUser['Role']['name'] == 'Student') {	?>
 		<dt class="profile"><?php echo __('School'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($user['School']['name'], array('controller' => 'schools', 'action' => 'view', $user['School']['id'])); ?>
+			<?php echo h($user['School']['name']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -81,7 +81,7 @@
 		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Publisher') {	?>
 		<dt class="profile"><?php echo __('Publisher'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($user['Publisher']['name'], array('controller' => 'publishers', 'action' => 'view', $user['Publisher']['id'])); ?>
+			<?php echo h($user['Publisher']['name']); ?>
 			&nbsp;
 		</dd>
 		<br>
@@ -253,13 +253,14 @@
 	<?php if (!empty($user['Review'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Book Id'); ?></th>
-		<th><?php echo __('Description'); ?></th>
+		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+			<th><?php echo __('Id'); ?></th>
+		<?php } ?>
+		<th><?php echo __('Book'); ?></th>
 		<th><?php echo __('Date'); ?></th>
 		<th><?php echo __('Notes'); ?></th>
-		<th><?php echo __('Review Type Id'); ?></th>
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+			<th><?php echo __('Review Type'); ?></th>
 			<th><?php echo __('Textbook content is aligned with your own curriculum.'); ?></th>
 			<th><?php echo __('Overall price of textbook'); ?></th>
 			<th><?php echo __('Overall content style'); ?></th>
@@ -282,15 +283,21 @@
 		<?php } ?>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
-	<?php foreach ($user['Review'] as $review): ?>
+	<?php foreach ($user['Review'] as $review):	?>
 		<tr>
-			<td><?php echo $review['id']; ?></td>
-			<td><?php echo $review['book_id']; ?></td>
-			<td><?php echo $review['description']; ?></td>
+			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+				<td><?php echo $review['id']; ?></td>
+			<?php } ?>
+			<td><?php
+			foreach($user['Book'] as $book) {
+				if($book['id'] == $review['book_id']) {
+					echo $book['book_name']; 
+				}
+			}	?></td>
 			<td><?php echo $review['date']; ?></td>
 			<td><?php echo $review['notes']; ?></td>
-			<td><?php echo $review['review_type_id']; ?></td>			
 			<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
+				<td><?php echo $review['review_type_id']; ?></td>			
 				<td><?php echo $review['published_content_aligned']; ?></td>
 				<td><?php echo $review['published_price']; ?></td>
 				<td><?php echo $review['published_content_style']; ?></td>

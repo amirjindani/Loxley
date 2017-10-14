@@ -5,18 +5,19 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('book_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('date'); ?></th>
-			<th><?php echo $this->Paginator->sort('notes'); ?></th>
+			<th><?php echo $this->Paginator->sort('notes', array(
+				'label' => 'Comments'
+			)); ?></th>
 			<th><?php echo $this->Paginator->sort('review_type_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('published_content_aligned', array('label' => 'Textbook content is aligned with your own curriculum.')); ?></th>
-			<th><?php echo $this->Paginator->sort('published_price', array('label' => 'Overall price of textbook')); ?></th>
-			<th><?php echo $this->Paginator->sort('published_content_style', array('label' => 'Overall content style'));  ?></th>
+			<th><?php echo $this->Paginator->sort('published_price', array('label' => 'Satisfaction with the overall price of the textbook')); ?></th>
+			<th><?php echo $this->Paginator->sort('published_content_style', array('label' => 'Overall content style (how engaging and friendly the text is)'));  ?></th>
 			<th><?php echo $this->Paginator->sort('published_included_tools', array('label' => 'Digital tools are included (e.g. homework, flashcards, quizzes, software, CD, etc.)'));  ?></th>
 			<th><?php echo $this->Paginator->sort('published_practice_questions', array('label' => 'Amount and quality of practice questions included in the textbook'));  ?></th>
 			<th><?php echo $this->Paginator->sort('published_up_to_date', array('label' => 'Most recent and up to date edition'));  ?></th>
 			<th><?php echo $this->Paginator->sort('published_provided_through_publisher', array('label' => 'Curriculum is provided through publisher/department based on textbook'));  ?></th>
-			<th><?php echo $this->Paginator->sort('ebook_functionality', array('label' => 'Functionality of platform'));  ?></th>
+			<th><?php echo $this->Paginator->sort('ebook_functionality', array('label' => 'Overall functionality of platform'));  ?></th>
 			<th><?php echo $this->Paginator->sort('ebook_integration_with_lms', array('label' => 'Integration with your LMS Sytem (Blackboard, Moodle, D2L, Canvas, etc.)'));  ?></th>
 			<th><?php echo $this->Paginator->sort('ebook_support', array('label' => 'Reliability of technical support to troubleshoot any issue'));  ?></th>
 			<th><?php echo $this->Paginator->sort('ebook_underline', array('label' => 'Ability for students to underline/highlight when they read'));  ?></th>
@@ -38,7 +39,6 @@
 		<td>
 			<?php echo $this->Html->link($review['Book']['id'], array('controller' => 'books', 'action' => 'view', $review['Book']['id'])); ?>
 		</td>
-		<td><?php echo h($review['Review']['description']); ?>&nbsp;</td>
 		<td><?php echo h($review['Review']['date']); ?>&nbsp;</td>
 		<td><?php echo h($review['Review']['notes']); ?>&nbsp;</td>
 		<td>

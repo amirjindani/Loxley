@@ -6,7 +6,7 @@
 </style>
 <div class="books form">
 <?php echo $this->Form->create('Book'); ?>
-	<fieldset>
+	<fieldset class="fieldset">
 		<legend><?php echo __('Add Book'); ?></legend>
 	<?php
 		echo $this->Form->input('book_isbn');
@@ -23,8 +23,13 @@
 		echo $this->Form->input('author', array(
 			'required' => 'required'
 		));
-		echo $this->Form->input('book_type_id', array('label' => 'Type of Resource'));
-		echo $this->Form->input('book_subject_id');
+		echo $this->Form->input('book_type_id', array(
+			'label' => 'Type of Resource',
+			'class' => 'select2'
+		));
+		echo $this->Form->input('book_subject_id', array(
+			'class' => 'select2'
+		));
 		echo $this->Form->input('active', array('default' => 1));
 		echo $this->Form->input('user_id', array('default' => $authUser['id']));
 	?>
