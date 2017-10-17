@@ -24,7 +24,7 @@
 					echo $this->Form->input('book_subject_id', array(
 						'options' => $bookSubjectOptions, 
 						'label' => false, 
-						'empty' => 'Choose a Subject or Subjects',
+						'empty' => 'Choose a Subject',
 						'class' => 'select2'
 					));
 				?>

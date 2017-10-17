@@ -56,8 +56,13 @@ class UsersController extends AppController {
 				$this->redirect('/');
 			}
 		}
+		$this->loadModel('BookSubject');
+		$this->BookSubject->recursive = -1;
+		$bookSubjects = $this->BookSubject->find('all', array(
+			'fields' => array('id','name'),
+		));
 		$this->set('user', $this->User->find('first', $options));
-		$this->set(compact('authUser'));
+		$this->set(compact('authUser','bookSubjects'));
 	}
 
 /**
@@ -84,10 +89,18 @@ class UsersController extends AppController {
 		if($index2 !== FALSE){
 			unset($roles[$index2]);
 		}
-		$schools = $this->User->School->find('list');
+		$this->User->School->recursive = -1;
+		$schoolOptions = $this->User->School->find('all', array(
+			'fields' => array('id','name'),
+		));
+		$this->loadModel('BookSubject');
+		$this->BookSubject->recursive = -1;
+		$subjectOptions = $this->BookSubject->find('all', array(
+			'fields' => array('id','name'),
+		));
 		$publishers = $this->User->Publisher->find('list');
 		$authUser = $this->Auth->user();
-		$this->set(compact('roles', 'schools', 'publishers', 'authUser'));
+		$this->set(compact('roles', 'schoolOptions', 'publishers', 'authUser', 'subjectOptions'));
 	}
 
 /**
@@ -117,7 +130,11 @@ class UsersController extends AppController {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
 		}
-		
+		$this->loadModel('BookSubject');
+		$this->BookSubject->recursive = -1;
+		$subjectOptions = $this->BookSubject->find('all', array(
+			'fields' => array('id','name'),
+		));
 		$roles = $this->User->Role->find('list');
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');

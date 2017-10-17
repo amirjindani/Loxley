@@ -14,6 +14,10 @@ class PublishersController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
+	public function beforeFilter() {
+		$this->Auth->allow('find');
+	}
 
 /**
  * index method

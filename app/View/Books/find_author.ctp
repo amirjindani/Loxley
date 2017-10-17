@@ -21,12 +21,12 @@
 				<fieldset>
 					<legend><?php echo __('Search by Author'); ?></legend>
 				<?php
-					echo $this->Form->input('author', array(
-						'options' => $bookAuthorOptions, 
-						'label' => false, 
-						'empty' => 'Choose an Author or Authors',
-						'class' => 'select2'
-					));
+					echo '<div class="input select"><select id="BookAuthor" class="select2" name="data[Book][author]">';
+					echo '<option value="">Choose an Author</option>';
+					foreach($bookAuthorOptions as $bookAuthorOption) {
+						echo '<option value="'.$bookAuthorOption.'">'.$bookAuthorOption.'</option>';
+					}
+					echo '</select></div>'
 				?>
 				</fieldset>
 				<div class="12u$">
@@ -51,3 +51,12 @@
 		$('.multi-select').select2();
 	});
 </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		for (i = 0; i < 5; i++) { 
+			var value = $( 'option' ).text();
+			$( 'option' ).val( value );
+		}
+	});
+</script>
+

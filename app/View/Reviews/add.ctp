@@ -14,19 +14,21 @@
 			'class' => 'datepicker', 
 			'default' => $today
 		));
-		if(!empty($addedBook)) {
-			echo $this->Form->input('book_id', array(
-				'label' => 'Resource Title',
-				'options' => $options,
-				'empty' => $addedBook,
-				'class' => 'select2'
-			));
-		} else { 
-			echo $this->Form->input('book_id', array(
-				'label' => 'Resource Title',
-				'options' => $options,
-			));
+//		if(!empty($addedBook)) {
+		echo '<div class="input select"><label for="ReviewBookId">Resource Title</label><select id="ReviewBookId" class="select2" name="data[Review][book_id]" required="required">';
+		echo '<option value="">Choose a Resource</option>';
+		foreach($options as $option) {
+			echo '<option value="'.$option['value'].'">'.$option['name'].'</option>';
 		}
+		echo '</select></div>';
+/*		} else { 
+		echo '<div class="input select"><label for="ReviewBookId">Resource Title</label><select id="ReviewBookId" class="select2" name="data[Review][book_id]" required="required">';
+		echo '<option value="">Choose a Resource</option>';
+		foreach($options as $option) {
+			echo '<option value="'.$option['Book']['id'].'">'.$option['Book']['book_name'].'</option>';
+		}
+		echo '</select></div>';
+		}*/
 		echo '<h4><i>Don\'t see the book you want to review? Add it to our database.</i></h4><div class="actions" style="float:none;background-color:#424242;"><li><a href="/books/add">Add a Book</a></div><br>';
 		echo '	<h3>What were your thoughts on this resource?</h3>';
 		echo $this->Form->input('notes', array(
@@ -51,7 +53,7 @@
 			'label' => 'Textbook content is aligned with your own curriculum.', 
 			'class'=> 'published'
 		));
-		echo'<div class="rating published"><span id="5" data-value="5">&#9734;</span><span id="4" data-value="4">&#9734;</span><span id="3" data-value="3">&#9734;</span><span id="2" data-value="2">&#9734;</span><span id="1" data-value="1">&#9734;</span></div>';
+//		echo'<div class="rating published"><span id="5" data-value="5">&#9734;</span><span id="4" data-value="4">&#9734;</span><span id="3" data-value="3">&#9734;</span><span id="2" data-value="2">&#9734;</span><span id="1" data-value="1">&#9734;</span></div>';
 		echo $this->Form->input('published_price', array(
 			'min' => '1', 
 			'max' => '5', 

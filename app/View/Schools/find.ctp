@@ -24,7 +24,7 @@
 					echo $this->Form->input('school_id', array(
 						'options' => $schoolOptions, 
 						'label' => false, 
-						'empty' => 'Choose a School or Schools',
+						'empty' => 'Choose a School',
 						'class' => 'select2'
 					));
 				?>

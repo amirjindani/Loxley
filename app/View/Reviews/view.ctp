@@ -277,6 +277,37 @@
 	</div>
 </div>
 <?php } ?>
+<div class="related">
+	<?php if (!empty($review['User'])): ?>
+	<h3><?php echo __('Reviewer'); ?></h3>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Username'); ?></th>
+<!--		<th><?php //echo __('Role'); ?></th>
+		<th><?php //echo __('School'); ?></th>-->
+		<th><?php echo __('Tenured?'); ?></th>
+		<th><?php echo __('Subject'); ?></th>
+		<th><?php echo __('Experience'); ?></th>
+<!--		<th class="actions"><?php echo __('Actions'); ?></th>-->
+	</tr>
+		<tr>
+			<td><?php echo $review['User']['username']; ?></td>
+<!--			<td><?php //echo $review['User']['role_id']; ?></td>
+			<td><?php //echo $review['User']['school_id']; ?></td>-->
+			<td><?php if($review['User']['professor_tenured'] == '1') {
+				echo 'Yes';
+			} else {
+				echo 'No';
+			}				
+			?></td>
+			<td><?php echo $review['User']['book_subject_id']; ?></td>
+			<td><?php echo $review['User']['experience']; ?></td>
+<!--			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'users', 'action' => 'view', $review['User']['id'])); ?>
+			</td>-->
+		</tr>
+	</table>
+<?php endif; ?>
 
 <script>
 //TO DO: use html to insert stars for number

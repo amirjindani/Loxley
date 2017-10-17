@@ -24,7 +24,7 @@
 					echo $this->Form->input('publisher_id', array(
 						'options' => $publisherOptions, 
 						'label' => false, 
-						'empty' => 'Choose a Publisher or Publishers',
+						'empty' => 'Choose a Publisher',
 						'class' => 'select2'
 					));
 				?>

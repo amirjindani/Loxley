@@ -20,6 +20,27 @@
 		echo $this->Form->input('last_name', array(
 			'required' => 'required'
 		));
+		echo '<div class="input select"><label for="UserSchoolId">Select Your Primary School:</label><select id="UserSchoolId" class="select2" name="data[User][school_id]">';
+		echo '<option value="">Choose a School</option>';
+		foreach($schoolOptions as $schoolOption) {
+			echo '<option value="'.$schoolOption['School']['id'].'">'.$schoolOption['School']['name'].'</option>';
+		}
+		echo '</select></div>';
+		echo '<h4><i>Don\'t see your school? Add it to our database.</i></h4><div class="actions" style="float:none;background-color:#424242;"><li><a href="/schools/add">Add a School</a></div><br>';
+		echo '<div class="input select"><label for="UserBookSubjectId">Select Your Primary Subject</label><select id="UserBookSubjectId" class="select2" name="data[User][book_subject_id]">';
+		echo '<option value="">Choose a Subject</option>';
+		foreach($subjectOptions as $subjectOption) {
+			echo '<option value="'.$subjectOption['BookSubject']['id'].'">'.$subjectOption['BookSubject']['name'].'</option>';
+		}
+		echo '</select></div>';		
+		echo $this->Form->input('professor_tenured');
+		echo '<div class="input select"><label for="UserExperience">How long have you been teaching?</label><select id="UserExperience" class="select2" name="data[User][experience]">';
+		echo '<option value="">Choose a Range</option>';
+		echo '<option value="1 - 2 Years">1 - 2 Years</option>';
+		echo '<option value="3 - 5 Years">3 - 5 Years</option>';
+		echo '<option value="6 - 10 Years">6 - 10 Years</option>';
+		echo '<option value="10 + Years">10 + Years</option>';
+		echo '</select></div>';		
 		echo $this->Form->input('accepted_terms', array(
 			'type' =>'checkbox', 
 			'label'=>__('I agree to the <a href="/pages/tos">Terms and Conditions</a>', true),
@@ -27,14 +48,12 @@
 			'value' => '0'
 		));
 		//Following are items to be used/referenced later
-//		echo $this->Form->input('school_id');
 //		echo $this->Form->input('student_major');
 //		echo $this->Form->input('student_graduation_date', array('type' => 'text', 'class' => 'datepicker'));
 //		echo $this->Form->input('publisher_id');
 //		if ($authUser['Role']['name'] == 'Administrator') {
 //			echo $this->Form->input('publisher_rating');
 //			echo $this->Form->input('professor_rating');
-//		echo $this->Form->input('professor_tenured');
 //		echo $this->Form->input('notes');
 //		echo $this->Form->input('password_reset_token');
 //		echo $this->Form->input('password_reset_token_date');

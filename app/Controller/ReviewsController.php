@@ -14,7 +14,7 @@ class ReviewsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
-
+	
 /**
  * index method
  *
@@ -43,8 +43,10 @@ class ReviewsController extends AppController {
 		}
 		$options = array('conditions' => array('Review.' . $this->Review->primaryKey => $id));
 		$authUser = $this->Auth->user();
-		$this->set('review', $this->Review->find('first', $options));
-		$this->set(compact('authUser'));
+		$review = $this->Review->find('first', $options);
+		$this->loadModel('Role');
+		$roles = $this->Role->find('all');
+		$this->set(compact('authUser', 'roles', 'review'));
 	}
 
 /**

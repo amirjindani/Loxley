@@ -318,6 +318,7 @@ form div.submit {
 	border: 0;
 	clear: both;
 	margin-top: 10px !important;
+	max-width:70vw;
 }
 label {
 	display: block;

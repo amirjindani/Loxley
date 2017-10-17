@@ -69,14 +69,12 @@
 		</span>
 		<span style="width:20%;float:left;">
 		<?php
-		echo $this->Form->input('author', array(
-				'div' => false,
-				'options' => $bookAuthorOptions,
-				'label' => false,
-				'empty' => 'Author',
-				'class' => 'select2'
-			)
-		);
+		echo '<select id="BookAuthor" class="select2" name="data[Book][Author]">';
+		echo '<option value="">Choose an Author</option>';
+		foreach($bookAuthorOptions as $bookAuthorOption) {
+			echo '<option value="'.$bookAuthorOption.'">'.$bookAuthorOption.'</option>';
+		}
+		echo '</select>'
 		?>
 		</span>
 		</div>
@@ -161,7 +159,7 @@
 	<p class="paginator">
 	<?php
 	echo $this->Paginator->counter(array(
-		'format' => __('Page {:page} of {:pages}. <br>Showing {:current} books out of a total of {:count}, showing books {:start} through {:end}')
+		'format' => __('Page {:page} of {:pages}. <br>Showing {:current} books out of a total of {:count}, showing books {:start} through {:end}.')
 	));
 	?>	</p>
 	<div class="paging">
