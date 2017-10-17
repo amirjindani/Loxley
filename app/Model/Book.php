@@ -127,7 +127,7 @@ class Book extends AppModel {
 		'school_id' => array(
 			'type' => 'like'
 		),
-		'author' => array(
+		'Author' => array(
 			'type' => 'like'
 		),		
 	);

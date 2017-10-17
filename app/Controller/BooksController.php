@@ -18,7 +18,7 @@ class BooksController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this->Auth->allow('find_author', 'find_book', 'index','landing_page');
+		$this->Auth->allow('find_author', 'find_book', 'index','landing_page', 'view');
 	}
 
 /**

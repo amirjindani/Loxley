@@ -105,16 +105,45 @@
 		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {	?>
 		<dt class="profile"><?php echo __('Professor Tenured'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['professor_tenured']); ?>
+			<?php 
+			if($user['User']['professor_tenured'] == '1') {
+				echo 'Yes';
+			} else {
+				echo 'No';
+			}
+			?>
 			&nbsp;
 		</dd>
 		<br>
 		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {	?>
+		<dt class="profile"><?php echo __('Experience'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['experience']); ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {	?>
+		<dt class="profile"><?php echo __('Subject'); ?></dt>
+		<dd>
+			<?php
+			foreach($bookSubjects as $bookSubject) {
+				if($bookSubject['BookSubject']['id'] == $user['User']['book_subject_id']) {
+					echo h($bookSubject['BookSubject']['name']); 
+				}
+			} ?>
+			&nbsp;
+		</dd>
+		<br>
+		<?php } ?>
+		<?php if (!empty($user['User']['notes'])) {	?>
 		<dt class="profile"><?php echo __('Notes'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['notes']); ?>
 			&nbsp;
 		</dd>
+		<?php } ?>
 		<!--<dt><?php //echo __('Password Reset Token'); ?></dt>
 		<dd>
 			<?php //echo h($user['User']['password_reset_token']); ?>

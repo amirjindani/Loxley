@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo 'Loxley' ?> -
+		<?php echo 'Loxley' ?> |
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />

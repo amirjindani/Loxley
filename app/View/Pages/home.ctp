@@ -8,7 +8,7 @@
 		<form method="post" action="#" class="container 100%">  
 			<br/>  <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSearch by category</h3>
 			 <ul class="action" style="text-align:center;">
-				<li><a href="/booksubjects/find" class=" button special">SEARCH SUBJECTS</a></li>
+				<li><a href="/book_subjects/find" class=" button special">SEARCH SUBJECTS</a></li>
 				<li><a href="/books/find_author" class=" button special">SEARCH AUTHORS</a></li>
 				<li><a href="/schools/find" class=" button special">SEARCH SCHOOLS</a></li>
 				<li><a href="/publishers/find" class=" button special">SEARCH PUBLISHERS</a></li>		
@@ -110,7 +110,7 @@
 	<section id="five" class="wrapper style2 special fade">
 		<div class="container">
 			<header>
-				<h2>Intrested in being a part of this?</h2>
+				<h2>Interested in being a part of this?</h2>
 				<p>Get started now!</p>
 			</header>
 			<div class="4u$ 12u$(xsmall)" style="margin:auto;"><a href="/users/add" class="button special" style="width:100%">Create an Account</a></div>

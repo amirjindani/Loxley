@@ -18,7 +18,7 @@ class SchoolsController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// Allow users to register and logout.
-		$this->Auth->allow('find');
+		$this->Auth->allow('find', 'add');
 	}
 
 /**
@@ -63,10 +63,6 @@ class SchoolsController extends AppController {
  */
 	public function add() {
 		//prevent any but admin users from accessing administrative pages
-		if($this->Auth->user('Role.name') != 'Administrator') {
-			$this->Flash->error('You are not authorized to visit that page');
-			$this->redirect('/');
-		}
 		if ($this->request->is('post')) {
 			$this->School->create();
 			if ($this->School->save($this->request->data)) {

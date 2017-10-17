@@ -18,7 +18,10 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('username');
 		echo $this->Form->input('email');
-		echo $this->Form->input('password');
+		echo $this->Form->input('password', array(
+			'disabled' => 'disabled',
+		));
+		echo '<div><label><i>Contact an adminstrator to edit password.</i></label></div>';
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('last_name');
 		if ($authUser['Role']['name'] == 'Administrator') {
@@ -43,6 +46,20 @@
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
 			echo '<br>'.$this->Form->input('professor_tenured');
+		}
+		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
+			echo '<div class="input select"><label for="UserBookSubjectId">Select Your Primary Subject</label><select id="UserBookSubjectId" class="select2" name="data[User][book_subject_id]">';
+			echo '<option value="">Choose a Subject</option>';
+			foreach($subjectOptions as $subjectOption) {
+				echo '<pre>';
+		print_r($subjectOption);
+		die('stopped intentionally');
+				echo '<option value="'.$subjectOption['BookSubject']['id'].'">'.$subjectOption['BookSubject']['name'].'</option>';
+			}
+			echo '</select></div>';		
+		}
+		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
+			echo '<br>'.$this->Form->input('experience');
 		}
 		echo $this->Form->input('notes');
 //		echo $this->Form->input('password_reset_token');
@@ -72,4 +89,15 @@
 <script>
 	$( 'div:has( > label[for="UserUsername"])' ).removeClass('required');
 	$( 'div:has( > label[for="UserPassword"])' ).removeClass('required');
+</script>
+<script>
+/*	$( document ).ready( function() {
+		$( 'input#password' ).change( function() {
+			if('input#password:checked') {
+				$('input#password' ).prop('disabled', false);
+			} else {
+				$("input").prop('disabled', true);
+			}
+		} );
+	} ); */
 </script>
