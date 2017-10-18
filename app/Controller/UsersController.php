@@ -132,14 +132,19 @@ class UsersController extends AppController {
 		}
 		$this->loadModel('BookSubject');
 		$this->BookSubject->recursive = -1;
-		$subjectOptions = $this->BookSubject->find('all', array(
-			'fields' => array('id','name'),
-		));
+		$subjectOptions = $this->BookSubject->find('all');
+		$options = array();
+		foreach($subjectOptions as $subjectOption){
+			$options[] = array(
+				'value'=>$subjectOption['BookSubject']['id'],
+				'name' => $subjectOption['BookSubject']['name']
+			);
+		}
 		$roles = $this->User->Role->find('list');
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
 		$authUser = $this->Auth->user();
-		$this->set(compact('roles', 'schools', 'publishers', 'authUser'));
+		$this->set(compact('roles', 'schools', 'publishers', 'authUser', 'options'));
 	}
 
 /**

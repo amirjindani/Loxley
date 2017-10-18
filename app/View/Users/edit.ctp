@@ -50,13 +50,10 @@
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
 			echo '<div class="input select"><label for="UserBookSubjectId">Select Your Primary Subject</label><select id="UserBookSubjectId" class="select2" name="data[User][book_subject_id]">';
 			echo '<option value="">Choose a Subject</option>';
-			foreach($subjectOptions as $subjectOption) {
-				echo '<pre>';
-		print_r($subjectOption);
-		die('stopped intentionally');
-				echo '<option value="'.$subjectOption['BookSubject']['id'].'">'.$subjectOption['BookSubject']['name'].'</option>';
+			foreach($options as $option) {
+				echo '<option value="'.$option['value'].'">'.$option['name'].'</option>';
 			}
-			echo '</select></div>';		
+			echo '</select></div>';	
 		}
 		if ($authUser['Role']['name'] == 'Administrator' || $authUser['Role']['name'] == 'Professor') {
 			echo '<br>'.$this->Form->input('experience');

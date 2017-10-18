@@ -18,7 +18,7 @@
 	<section id="banner" class="parallax">
 			<div class="content" style="padding-top:20px;background-color:transparent;">
 			  <header class="align-left" style="float:left;">
-				<h2><i style="color:#000 !important;">Meet </i><span style="font-weight:bold; color:#4cb750;">loxley</span></h2>
+				<h2><i style="color:#000 !important;">Meet </i><span style="font-weight:bold; color:#4cb750;">Loxley</span></h2>
 				  <br/>
 				<h1 style="color:#000 !important;font-weight:bold;">An agile textbook rating site dedicated to professors.</h1>
 				<h1 style="color:#000 !important;font-weight:bold;">With textbook content falling by the wayside and quality dropping as publishers focus more on digital tools,</h1>

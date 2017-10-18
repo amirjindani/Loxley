@@ -3,7 +3,7 @@
 	<div class="container">
 	<!-- Content -->
 	<div>
-	<h2 style="display:inline;">Founded by students</h2><p style='display:inline;'> trying to understand why textbooks were so expensive yet never added value to our studies, we realized the textbook industry was expensive, stagnant, and for the most part, irrelevant to our studies.</p>
+	<p>Founded by students trying to understand why textbooks were so expensive yet never added value to our studies, we realized the textbook industry was expensive, stagnant, and for the most part, irrelevant to our studies.</p>
 	<br>
 	&emsp;
 	<h3 style="color:#000;text-align:center;">Enter Loxley!</h3>

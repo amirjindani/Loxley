@@ -50,8 +50,8 @@
 		<br>
 		<?php
 		if(!empty($review['Review']['published_average_rating'])) { ?>		
-			<dt id="published-average" class="profile"><?php echo __('Overall Score'); ?></dt>
-			<dd>
+			<dt class="profile"><?php echo __('Overall Score'); ?></dt>
+			<dd style="display:block;">
 				<?php echo h($review['Review']['published_average_rating']); ?>
 				&nbsp;
 			</dd>
@@ -113,10 +113,10 @@
 			</dd>
 			<br>
 		<?php }
-		if(!empty($review['Review']['average_ebook_rating'])) { ?>		
+		if(!empty($review['Review']['ebook_average_rating'])) { ?>		
 			<dt class="profile"><?php echo __('Overall Score'); ?></dt>
-			<dd>
-				<?php echo h($review['Review']['average_ebook_rating']); ?>
+			<dd style="display:block;">
+				<?php echo h($review['Review']['ebook_average_rating']); ?>
 				&nbsp;
 			</dd>
 			<br>
