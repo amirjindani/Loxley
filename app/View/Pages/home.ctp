@@ -111,7 +111,7 @@
 		<div class="container">
 			<header>
 				<h2>Interested in being a part of this?</h2>
-				<p>Get started now!</p>
+				<p class="blue">Get started now!</p>
 			</header>
 			<div class="4u$ 12u$(xsmall)" style="margin:auto;"><a href="/users/add" class="button special" style="width:100%">Create an Account</a></div>
 		</div>

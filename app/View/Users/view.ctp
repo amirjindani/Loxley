@@ -26,7 +26,7 @@
 		<?php if ($authUser['Role']['name'] == 'Administrator') {	?>
 		<dt class="profile"><?php echo __('Password'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['password']); ?>
+			<?php echo '&bull;&bull;&bull;&bull;&bull;&bull;'; ?>
 			&nbsp;
 		</dd>
 		<br>

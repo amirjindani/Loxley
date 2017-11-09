@@ -1618,6 +1618,7 @@
 		a:hover {
 			color: #4cb750 !important;
 			border-bottom-color: transparent;
+			background-color:transparent !important;
 		}
 
 	strong, b {
@@ -1739,6 +1740,10 @@
 		text-align: right;
 	}
 
+	.blue {
+		color:#1672B1 !important;
+	}
+	
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -2172,7 +2177,7 @@
 	}
 
 		header.major:after {
-			background: #0c609e;
+			background: #000;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2836,7 +2841,7 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-	background-color: #585858;
+	background-color: #transparent !important;
 			}
 
 			input[type="submit"].special:active,
@@ -3151,7 +3156,7 @@
 			.wrapper.style2 input[type="button"]:active,
 			.wrapper.style2 .button:hover,
 			.wrapper.style2 .button:active {
-	background-color: rgba(0,0,0,1.00) !important;
+	background-color: transparent !important;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 	color: #ffffff !important;
 			}
@@ -3178,7 +3183,7 @@
 				.wrapper.style2 input[type="button"].special:active,
 				.wrapper.style2 .button.special:hover,
 				.wrapper.style2 .button.special:active {
-					background-color: rgba(255, 255, 255, 0.075) !important;
+					background-color: transparent !important;
 					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 					color: #ffffff !important;
 				}

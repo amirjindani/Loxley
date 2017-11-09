@@ -72,10 +72,24 @@ class UsersController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			//check to see if a new password has been entered
+			if(!empty($new_password = $this->request->data['User']['password'])) {
+				//if so, make sure that new password has been confirmed
+				if($new_password == $this->request->data['User']['password_confirm']) {
+					$this->request->data['User']['password'] = $new_password;
+				} else {
+					//if not set variable which prevents save
+					$failedPasswordMatch = 1;
+				}
+			}
 			$this->User->create();
-			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('You have successfully created an account. Please, log in to continue.'));
-				return $this->redirect(array('controller'=>'pages','action' => 'home'));
+			if(!isset($failedPasswordMatch)) {
+				if ($this->User->save($this->request->data)) {
+					$this->Flash->success(__('You have successfully created an account. Please, log in to continue.'));
+					return $this->redirect(array('controller'=>'pages','action' => 'home'));
+				} else {
+					$this->Flash->error(__('Your account could not be created. Please, try again.'));
+				}
 			} else {
 				$this->Flash->error(__('Your account could not be created. Please, try again.'));
 			}
@@ -120,9 +134,23 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('Your account has been successfully updated.'));
-				return $this->redirect(array('action' => 'view', $this->params['pass'][0] => $this->request->data['User']['id']));
+			//check to see if a new password has been entered
+			if(!empty($new_password = $this->request->data['User']['new_password'])) {
+				//if so, make sure that new password has been confirmed
+				if($new_password == $this->request->data['User']['new_password_confirm']) {
+					$this->request->data['User']['password'] = $new_password;
+				} else {
+					//if not set variable which prevents save
+					$failedPasswordMatch = 1;
+				}
+			}
+			if(!isset($failedPasswordMatch)) {
+				if ($this->User->save($this->request->data)) {
+					$this->Flash->success(__('Your account has been successfully updated.'));
+					return $this->redirect(array('action' => 'view', $this->params['pass'][0] => $this->request->data['User']['id']));
+				} else {
+					$this->Flash->error(__('Your account could not be updated. Please, try again.'));
+				}
 			} else {
 				$this->Flash->error(__('Your account could not be updated. Please, try again.'));
 			}
@@ -144,7 +172,7 @@ class UsersController extends AppController {
 		$schools = $this->User->School->find('list');
 		$publishers = $this->User->Publisher->find('list');
 		$authUser = $this->Auth->user();
-		$this->set(compact('roles', 'schools', 'publishers', 'authUser', 'options'));
+		$this->set(compact('roles', 'schools', 'publishers', 'authUser', 'options', 'id'));
 	}
 
 /**

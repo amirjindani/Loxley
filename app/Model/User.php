@@ -38,6 +38,14 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'rule1' => array(
+				'rule' => array('isUnique', array('username'), false),
+				'message' => 'Please choose a different username.'
+			),
+			'rule2' => array(
+				'rule' => array('isUnique', array('email'), false),
+				'message' => 'You have already created an account with this e-mail address. Please, sign in.'
+			),
 		),
 		'role_id' => array(
 			'numeric' => array(

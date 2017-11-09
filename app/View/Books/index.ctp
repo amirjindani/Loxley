@@ -156,7 +156,7 @@
 	<?php } ?>
 	</tbody>
 	</table>
-	<p class="paginator">
+	<p class="paginator blue">
 	<?php
 	echo $this->Paginator->counter(array(
 		'format' => __('Page {:page} of {:pages}. <br>Showing {:current} books out of a total of {:count}, showing books {:start} through {:end}.')

@@ -21,7 +21,15 @@
 		echo $this->Form->input('password', array(
 			'disabled' => 'disabled',
 		));
-		echo '<div><label><i>Contact an adminstrator to edit password.</i></label></div>';
+		//new password field (and confirmation field) for use in controller function only (does not save to database)
+		echo $this->Form->input('new_password', array(
+			'type' => 'password',
+		));		
+		echo $this->Form->input('new_password_confirm', array(
+			'type' => 'password',
+			'label' => 'Confirm New Password'
+		));		
+		echo '<div id="new-password" class="actions" style="float:none;background-color:#424242;"><li><a id="edit-password">Edit Password</a></div>';
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('last_name');
 		if ($authUser['Role']['name'] == 'Administrator') {
@@ -88,13 +96,33 @@
 	$( 'div:has( > label[for="UserPassword"])' ).removeClass('required');
 </script>
 <script>
-/*	$( document ).ready( function() {
-		$( 'input#password' ).change( function() {
-			if('input#password:checked') {
-				$('input#password' ).prop('disabled', false);
-			} else {
-				$("input").prop('disabled', true);
-			}
+	$( document ).ready( function() {
+		//Only display password field when edit password button is clicked
+		$( 'div.input:has( > label[for="UserPassword"] )' ).hide();
+		$( 'div.input:has( > label[for="UserNewPassword"] )' ).hide();
+		$( 'div.input:has( > label[for="UserNewPasswordConfirm"] )' ).hide();
+		$( 'a#edit-password' ).click( function() {
+			$( 'div.input:has( > label[for="UserNewPassword"] )' ).show();
+			$( 'div.input:has( > label[for="UserNewPasswordConfirm"] )' ).show();
+			$( 'div#new-password' ).hide();
 		} );
-	} ); */
+		//If password fields match, display green notification saying so; if not, display red notification
+		$('input').blur(function() {
+			var pass = $('input#UserNewPassword').val();
+			var repass = $('input#UserNewPasswordConfirm').val();
+			if(($('input#UserNewPassword').val().length == 0) || ($('input#UserNewPasswordConfirm').val().length == 0)){
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserNewPasswordConfirm)' ).append( '<p id="not-passwords-match" style="color:red"> <b style=" color:red;margin-bottom:0px;">&#9888;</b> Passwords Do Not Match</p>' );
+			}
+			else if (pass != repass) {
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserNewPasswordConfirm)' ).append( '<p id="not-passwords-match" style="color:red"> <b  style="color:red;margin-bottom:0px;">&#9888;</b> Passwords Do Not Match</p>' );
+			}
+			else {
+				$( '#passwords-match' ).remove();
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserNewPasswordConfirm)' ).append( '<p id="passwords-match" style="color:green;margin-bottom:0px;">Passwords Match!</p>' );
+			}
+		});
+	} );
 </script>

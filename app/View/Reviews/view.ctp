@@ -319,3 +319,9 @@ $( document ).ready( function() {
 	}
 } );
 </script>
+<script type="text/javascript">
+$('.barrating').barrating({
+	theme: 'bars-movie',
+	initialRating: ''
+ });
+</script>

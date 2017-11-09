@@ -66,6 +66,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!--jQuery rating plugin -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bars-movie.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/jquery.barrating.min.js"></script>
 	<style>
 	/* select2 styling */
 	.select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -84,7 +89,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		right: 1px;
 		width: 52px !important;
 	}	
-	
 	</style>
 </head>
 <body>

@@ -2,7 +2,7 @@
 	<div class="container">
 		<header class="major">
 		  <h2>Search by Author</h2>
-		  <p>Having trouble finding a textbook? Search by author below.</p>
+		  <p class="blue">Having trouble finding a textbook? Search by author below.</p>
 		</header>
 
 		<!-- Form -->

@@ -9,6 +9,9 @@
 			'required' => 'required'
 		));
 		echo $this->Form->input('password');
+		echo $this->Form->input('password_confirm', array(
+			'type' => 'password',
+		));
 		echo $this->Form->input('role_id', array(
 			'options' => $roles,
 			'default' => '4',
@@ -96,4 +99,26 @@
 			}
 		} )
 	} )
+</script>
+<script>
+	$( document ).ready( function() {
+		//If password fields match, display green notification saying so; if not, display red notification
+		$('input').blur(function() {
+			var pass = $('input#UserPassword').val();
+			var repass = $('input#UserPasswordConfirm').val();
+			if(($('input#UserPassword').val().length == 0) || ($('input#UserPasswordConfirm').val().length == 0)){
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserPasswordConfirm)' ).append( '<p id="not-passwords-match" style="color:red;margin-bottom:0px;"> <b style=" color:red;">&#9888;</b> Passwords Do Not Match</p>' );
+			}
+			else if (pass != repass) {
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserPasswordConfirm)' ).append( '<p id="not-passwords-match" style="color:red;margin-bottom:0px;"> <b  style="color:red;">&#9888;</b> Passwords Do Not Match</p>' );
+			}
+			else {
+				$( '#passwords-match' ).remove();
+				$( '#not-passwords-match' ).remove();
+				$( 'div.input.password:has( > #UserPasswordConfirm)' ).append( '<p id="passwords-match" style="color:green;margin-bottom:0px;">Passwords Match!</p>' );
+			}
+		});
+	} );
 </script>

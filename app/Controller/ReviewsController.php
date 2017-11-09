@@ -46,7 +46,8 @@ class ReviewsController extends AppController {
 		$review = $this->Review->find('first', $options);
 		$this->loadModel('Role');
 		$roles = $this->Role->find('all');
-		$this->set(compact('authUser', 'roles', 'review'));
+		$ratingOptions = array('Terrible', 'Poor', 'Acceptable', 'Good', 'Excellent');
+		$this->set(compact('authUser', 'roles', 'review', 'ratingOptions'));
 	}
 
 /**
@@ -92,7 +93,8 @@ class ReviewsController extends AppController {
 		$reviewTypes = $this->Review->ReviewType->find('list', array('fields' => 'name'));
 		$users = $this->Review->User->find('list');
 		$authUser = $this->Auth->user();
-		$this->set(compact('books', 'reviewTypes', 'users', 'authUser', 'today', 'addedBook', 'options'));
+		$ratingOptions = array('Terrible', 'Poor', 'Acceptable', 'Good', 'Excellent');
+		$this->set(compact('books', 'reviewTypes', 'users', 'authUser', 'today', 'addedBook', 'options', 'ratingOptions'));
 	}
 
 /**
@@ -126,7 +128,8 @@ class ReviewsController extends AppController {
 		$reviewTypes = $this->Review->ReviewType->find('list', array('fields' => 'name'));
 		$users = $this->Review->User->find('list');
 		$authUser = $this->Auth->user();
-		$this->set(compact('books', 'reviewTypes', 'users', 'authUser'));
+		$ratingOptions = array('Terrible', 'Poor', 'Acceptable', 'Good', 'Excellent');
+		$this->set(compact('books', 'reviewTypes', 'users', 'authUser', 'ratingOptions'));
 	}
 
 /**
